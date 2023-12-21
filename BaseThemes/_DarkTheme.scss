@@ -1,0 +1,14 @@
+@use "../Utilities/Globals";
+
+.theme-dark
+{
+    // Client Colours
+    --background-primary: #{Globals.$DarkRed}; // Chat Area and Server Topbar
+    --background-secondary: #{Globals.$DarkRed}; // Sidebars, Guild Folders
+    --background-secondary-alt: #{Globals.$DarkRed}; // Client Profile Area 
+    --background-tertiary: #{Globals.$DarkRed}; // Client Titlebar, Guild Sidebar
+
+    --channeltextarea-background: #{Globals.$DarkRed};
+
+    --primary-630: #{Globals.$DarkRed}; // @Members Menu
+}
