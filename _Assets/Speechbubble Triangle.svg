@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 257 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-343,0)">
+        <g id="Speechbubble-Triangle" serif:id="Speechbubble Triangle" transform="matrix(1,0,0,1,-59.8326,-116.233)">
+            <rect x="403.454" y="116.233" width="256" height="118.427" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="403.454" y="116.233" width="256" height="118.427"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,1,403.908,-21.1063)">
+                    <path d="M0,236.104L128,157.884L150.791,196.787L256,137.573L256,217.953L103.686,256L83.375,212.767L0,236.104Z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

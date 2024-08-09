@@ -28,7 +28,6 @@ $BubbleBorderBottom: 6px;
 // Speech Bubble
 .message_d5deea .contents_f9f2ca:before,
 .message_d5deea:before // Normal Bubbles,
-// .contents_f9f2ca:after // White Bubble Base 
 {
     content: "";
     position: absolute;
@@ -59,4 +58,19 @@ $BubbleBorderBottom: 6px;
 .message_d5deea .contents_f9f2ca:before
 {  
     box-shadow: 0px $BubbleBorderBottom white;
+}
+
+// Speech Bubble Triangle
+.message_d5deea.groupStart_d5deea .contents_f9f2ca:after
+{
+    content: "";
+    z-index: 100;
+    position: absolute;
+    bottom: 0px;
+    left: 26px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: (url(https://garbage-memes.should-be.legal/9gyimvd.svg));
 }
