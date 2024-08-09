@@ -1,12 +1,17 @@
-$MsgGroupSeperation: 40px;
-$MsgFromTop: -6px; // Distance from top
+$MsgGroupSeperation: 80px; // Distance between message groups
+
+$MsgFromTop: -6px; // Distance from top, Text
 $MsgLeft: 24px;
 
-$BubbleWidth:  calc(100% - 85px);
+$BubbleWidth:  calc(100% - 85px); // No Speechbubble Triangle
+$BubbleWidth:  calc(100% - 93px); // Space for Speechbubble Triangle
 $BubbleBorderLeft: 4px;
 $BubbleBorderRight: 8px;
 $BubbleBorderTop: 5px;
 $BubbleBorderBottom: 6px;
+
+$MessagePaddingLeft: 72px; // Default, No Speechbubble Triangle
+$MessagePaddingLeft: 80px;
 
 // Positioning
 .message_d5deea.groupStart_d5deea
@@ -25,16 +30,27 @@ $BubbleBorderBottom: 6px;
     left: $MsgLeft;
 }
 
+// Extra Padding for Speechbubble Triangle Space
+.cozy_f9f2ca .messageContent_f9f2ca
+{
+    padding-left: $MessagePaddingLeft; // Default 72
+}
+.container_b558d0 // Images
+{
+    padding-left: calc($MessagePaddingLeft - 72px) 
+}
+
+
 // Speech Bubble
 .message_d5deea .contents_f9f2ca:before,
 .message_d5deea:before // Normal Bubbles,
 {
     content: "";
     position: absolute;
+    right: 0;
+
     width: $BubbleWidth;
     height: 100%;
-
-    z-index: 0;
 
     background-color: black;
 
@@ -49,9 +65,6 @@ $BubbleBorderBottom: 6px;
     padding-right: -72px;
 
     border-width: $BubbleBorderTop $BubbleBorderRight 0px $BubbleBorderLeft;
-
-    // clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-    // clip-path: polygon(1% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 // Bottom Message
@@ -61,16 +74,17 @@ $BubbleBorderBottom: 6px;
 }
 
 // Speech Bubble Triangle
-.message_d5deea.groupStart_d5deea .contents_f9f2ca:after
+.messageListItem_d5deea:has(.groupStart_d5deea):after
 {
     content: "";
-    z-index: 100;
+    z-index: 1;
     position: absolute;
-    bottom: 0px;
-    left: 26px;
+    left: 46px;
+    top: 14px;
 
-    width: 50px;
-    height: 50px;
-
-    background-image: (url(https://garbage-memes.should-be.legal/9gyimvd.svg));
+    width: 40px;
+    height: 40px;
+    background-image: url(https://garbage-memes.should-be.legal/51SBujE.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
