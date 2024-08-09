@@ -1,0 +1,62 @@
+$MsgGroupSeperation: 40px;
+$MsgFromTop: -6px; // Distance from top
+$MsgLeft: 24px;
+
+$BubbleWidth:  calc(100% - 85px);
+$BubbleBorderLeft: 4px;
+$BubbleBorderRight: 8px;
+$BubbleBorderTop: 5px;
+$BubbleBorderBottom: 6px;
+
+// Positioning
+.message_d5deea.groupStart_d5deea
+{
+    margin-top: $MsgGroupSeperation;
+
+    min-height: 0px;
+    // height: 22px;
+}
+
+// This must contain all chat contents
+.messageContent_f9f2ca, .container_b558d0
+{
+    position: relative;
+    top: $MsgFromTop;
+    left: $MsgLeft;
+}
+
+// Speech Bubble
+.message_d5deea .contents_f9f2ca:before,
+.message_d5deea:before // Normal Bubbles,
+// .contents_f9f2ca:after // White Bubble Base 
+{
+    content: "";
+    position: absolute;
+    width: $BubbleWidth;
+    height: 100%;
+
+    z-index: 0;
+
+    background-color: black;
+
+    border: solid white;
+    // Border Sides
+    border-width: 0px $BubbleBorderRight 0px $BubbleBorderLeft;
+}
+
+// First Message
+.message_d5deea.groupStart_d5deea .contents_f9f2ca:before
+{
+    padding-right: -72px;
+
+    border-width: $BubbleBorderTop $BubbleBorderRight 0px $BubbleBorderLeft;
+
+    // clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    // clip-path: polygon(1% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+// Bottom Message
+.message_d5deea .contents_f9f2ca:before
+{  
+    box-shadow: 0px $BubbleBorderBottom white;
+}

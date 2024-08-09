@@ -1,0 +1,69 @@
+$AvatarPath: 0% 0%, 95% 15%, 100% 85%, 15% 100%;
+
+// $AvatarPath:0 15%, 100% 0, 100% 85%, 0 100%; // Normalish version
+// $AvatarPath: 0 15%, 100% 0, 100% 100%, 0 85%; // In Reverse
+
+  //              //
+ // Chat Avatars //
+//              //
+.avatar_f9f2ca
+{
+    // $AvatarSize: 50px;
+    // width: $AvatarSize;
+    // height: $AvatarSize;
+    
+    border-radius: 0%;
+    clip-path: polygon($AvatarPath);
+}
+
+// Black Border
+.messageListItem_d5deea:has(.groupStart_d5deea):before
+{
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: -7px;
+
+    $AvatarSize: 60px;
+    width: $AvatarSize;
+    height: $AvatarSize;
+    clip-path: polygon($AvatarPath);
+
+    background-color: black;
+}
+
+// White Border
+.messageListItem_d5deea:has(.groupStart_d5deea):after
+{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -2px;
+
+    $AvatarSize: 50px;
+    width: $AvatarSize;
+    height: $AvatarSize;
+    clip-path: polygon($AvatarPath);
+
+    background-color: white;
+}
+
+
+
+
+
+
+// Decorations Fix
+.avatarDecoration_f9f2ca
+{
+    clip-path: polygon($AvatarPath);
+
+    $AvatarSize: 40px;
+    width: $AvatarSize;
+    height: $AvatarSize;
+
+    left: 16px;
+    top: 6px;
+
+    // transform: skew(-5deg);
+}

@@ -1,0 +1,6 @@
+@use "Messages";
+
+.mentioned_d5deea:before
+{
+    left: Messages.$MsgLeft + 48px;
+}

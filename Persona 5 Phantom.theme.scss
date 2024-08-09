@@ -37,3 +37,10 @@
 // @use "Utilities/Globals";
 
 @use "BaseThemes/DarkTheme";
+
+@use "Client/Main/Avatars";
+
+@use "Client/Chat/Replies";
+@use "Client/Chat/Messages";
+@use "Client/Chat/Nickname";
+@use "Client/Chat/Mentions";
