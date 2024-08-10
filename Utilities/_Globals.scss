@@ -1,5 +1,12 @@
 // Worth considering if I should use CSS Vars instead for user customizability
 
+// Fonts
+@font-face 
+{
+    font-family: 'p5RegText';
+    src: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/raw/main/_Fonts/P5%20Reg%20Text/P5%20Reg%20Text.otf);
+}
+
 // Persona 5 Colours
 $DarkRed: #4c0000;
 
