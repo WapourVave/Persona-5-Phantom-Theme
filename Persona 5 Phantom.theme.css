@@ -1,1 +1,122 @@
-C:/Users/Wapour Vave/AppData/Roaming/vesktop/themes/Persona 5 Phantom.theme.css
+@charset "UTF-8";
+/**
+ * @name Persona 5 Phantom
+ * @author WapourVave
+ * @version 0.0.0
+ * @description Persona 5 Phantom Theme. 🎭
+ */
+@font-face {
+  font-family: "p5RegText";
+  src: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/raw/main/_Fonts/P5%20Reg%20Text/P5%20Reg%20Text.otf);
+}
+.theme-dark {
+  --background-primary: #4c0000;
+  --background-secondary: #4c0000;
+  --background-secondary-alt: #4c0000;
+  --background-tertiary: #4c0000;
+  --channeltextarea-background: #4c0000;
+  --primary-630: #4c0000;
+}
+
+:root {
+  --font-primary: "p5RegText";
+}
+
+.avatar_f9f2ca {
+  position: absolute;
+  top: 8px;
+  border-radius: 0%;
+  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/_Assets/AvatarBorderMask.svg);
+          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/_Assets/AvatarBorderMask.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 40px;
+          mask-size: 40px;
+}
+
+.messageListItem_d5deea:has(.groupStart_d5deea):before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  width: 60px;
+  height: 60px;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/_Assets/AvatarBorder.svg);
+  background-repeat: no-repeat;
+}
+
+.avatarDecoration_f9f2ca {
+  -webkit-clip-path: polygon(0% 0%, 95% 15%, 100% 85%, 15% 100%);
+          clip-path: polygon(0% 0%, 95% 15%, 100% 85%, 15% 100%);
+  width: 40px;
+  height: 40px;
+  left: 16px;
+  top: 12px;
+}
+
+.repliedMessage_f9f2ca {
+  position: absolute;
+  top: -18px;
+}
+
+.message_d5deea.groupStart_d5deea {
+  margin-top: 80px;
+  min-height: 0px;
+}
+
+.messageContent_f9f2ca, .container_b558d0 {
+  position: relative;
+  top: -6px;
+  left: 24px;
+}
+
+.cozy_f9f2ca .messageContent_f9f2ca {
+  padding-left: 80px;
+}
+
+.container_b558d0 {
+  padding-left: 8px;
+}
+
+.message_d5deea .contents_f9f2ca:before,
+.message_d5deea:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: calc(100% - 93px);
+  height: 100%;
+  background-color: black;
+  border: solid white;
+  border-width: 0px 8px 0px 4px;
+}
+
+.message_d5deea.groupStart_d5deea .contents_f9f2ca:before {
+  padding-right: -72px;
+  border-width: 5px 8px 0px 4px;
+}
+
+.message_d5deea .contents_f9f2ca:before {
+  box-shadow: 0px 6px white;
+}
+
+.messageListItem_d5deea:has(.groupStart_d5deea):after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 46px;
+  top: 14px;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/_Assets/Speechbubble%20Triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_f9f2ca {
+  position: absolute;
+  top: -35px;
+}
+
+.mentioned_d5deea:before {
+  left: 72px;
+}
