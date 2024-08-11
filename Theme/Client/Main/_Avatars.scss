@@ -5,17 +5,12 @@ $AvatarTop: 8px; // 2px Default
 {
     position: absolute;
     top: $AvatarTop;
-
-    // $AvatarSize: 50px;
-    // width: $AvatarSize;
-    // height: $AvatarSize;
     
     border-radius: 0%;
     // clip-path: polygon($AvatarPath);
     mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
     mask-repeat: no-repeat;
     mask-size: 40px;
-    // mask-size: $AvatarSize;
 }
 
 // Avatar Border
