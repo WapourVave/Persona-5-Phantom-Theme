@@ -1,3 +1,5 @@
+@use "../../Utilities/Globals";
+
 $AvatarPath: 0% 0%, 95% 15%, 100% 85%, 15% 100%;
 $AvatarTop: 8px; // 2px Default
 
@@ -8,7 +10,7 @@ $AvatarTop: 8px; // 2px Default
     
     border-radius: 0%;
     // clip-path: polygon($AvatarPath);
-    mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
+    mask-image: Globals.$AvatarBorderMask;
     mask-repeat: no-repeat;
     mask-size: 40px;
 }
@@ -26,7 +28,7 @@ $AvatarTop: 8px; // 2px Default
     width: $AvatarSize;
     height: $AvatarSize;
 
-    background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorder.svg);
+    background-image: Globals.$AvatarBorder;
     background-repeat: no-repeat;
 }
 
