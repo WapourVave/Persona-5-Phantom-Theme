@@ -1,7 +1,23 @@
-$NickTop: -35px;
+$NickTop: -105px;
+
+.headerText_f9f2ca
+{
+    position: absolute;
+}
 
 .header_f9f2ca
 {
     position: absolute;
     top: $NickTop;
+}
+
+.header_f9f2ca:before
+{
+    content: "";
+    position: absolute;
+    
+    width: 200px;
+    height: 100px;
+
+    background-color: red;
 }
