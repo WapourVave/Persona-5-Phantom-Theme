@@ -12,7 +12,7 @@ $AvatarTop: 8px; // 2px Default
     
     border-radius: 0%;
     // clip-path: polygon($AvatarPath);
-    mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/_Assets/AvatarBorderMask.svg);
+    mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
     mask-repeat: no-repeat;
     mask-size: 40px;
     // mask-size: $AvatarSize;
@@ -31,7 +31,7 @@ $AvatarTop: 8px; // 2px Default
     width: $AvatarSize;
     height: $AvatarSize;
 
-    background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/_Assets/AvatarBorder.svg);
+    background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorder.svg);
     background-repeat: no-repeat;
 }
 
