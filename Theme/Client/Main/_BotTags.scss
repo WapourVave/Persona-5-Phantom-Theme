@@ -1,0 +1,15 @@
+.rem_a9e77f .botText_a9e77f
+{
+    font-size: 0;
+}
+
+.rem_a9e77f .botText_a9e77f:before
+{
+    content: "BOT";
+    font-size: .8rem;
+    
+    line-height: 200px;
+
+    // position: absolute;
+    top: 0px;
+}
