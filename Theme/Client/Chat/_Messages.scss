@@ -1,6 +1,6 @@
 @use "../../Utilities/Globals";
 
-$MsgGroupSeperation: 180px; // Distance between message groups
+$MsgGroupSeperation: 80px; // Distance between message groups
 
 $MsgFromTop: -6px; // Distance from top, Text
 $MsgLeft: 24px;
@@ -42,7 +42,6 @@ $MessagePaddingLeft: 80px;
     padding-left: calc($MessagePaddingLeft - 72px) 
 }
 
-
 // Speech Bubble
 .message_d5deea .contents_f9f2ca:before,
 .message_d5deea:before // Normal Bubbles,
@@ -53,7 +52,7 @@ $MessagePaddingLeft: 80px;
 
     width: $BubbleWidth;
     height: 100%;
-
+    
     background-color: black;
 
     border: solid white;
@@ -89,4 +88,9 @@ $MessagePaddingLeft: 80px;
     background-image: Globals.$SpeechbubbleSquiggle;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.timestamp_f9f2ca
+{
+    
 }

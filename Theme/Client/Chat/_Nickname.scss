@@ -1,23 +1,122 @@
-$NickTop: -105px;
+$NickTop: -35px;
+$NickLeft: -10px;
 
-.headerText_f9f2ca
-{
-    position: absolute;
-}
+$BubbleWidth: 200px;
+$BubbleHeight: 30px;
+$BubbleRotation: -4deg;
+
+$BubbleContentCenter: 4px;
+
+$TextTop: 0;
+
+$TimeStampLeft: 206px;
 
 .header_f9f2ca
 {
-    position: absolute;
+    // position: absolute;
+    z-index: 1;
     top: $NickTop;
+    left: $NickLeft;
+    transform: rotate($BubbleRotation);
+
+    width: $BubbleWidth;
+
+    overflow: visible!important;
+
+    // max-width: 200px;
 }
 
-.header_f9f2ca:before
+.headerText_f9f2ca:before
 {
     content: "";
     position: absolute;
-    
-    width: 200px;
-    height: 100px;
+    left: 0;
+    top: 0px;
 
-    background-color: red;
+    width: $BubbleWidth;
+    height: $BubbleHeight;
+
+    // Middle Finder
+    // content: "|";
+    // color: red;
+    // text-align: center;
+
+    background-color: white;
+    // background-clip: padding-box;
+
+    // border: solid black;
+    // border-width: 4px 5px 5px 6px;
+
+    $BorderLeft: -4px;
+    $BorderRight: 5px;
+    $BorderTop: -5px;
+    $BorderBottom: 6px;
+
+    box-shadow: $BorderLeft $BorderTop black, $BorderRight $BorderBottom black, // They don't hit all corners
+    $BorderLeft $BorderBottom black, $BorderRight $BorderTop black; // Now they hit all the corners
+}
+
+.username_f9f2ca
+{
+    position: absolute;
+    left: 9px; // Offset to center of Bubble
+    top: $BubbleContentCenter;
+
+    text-align: center;
+
+    display: inline-block;
+    width: 180px;
+    height: 24px;
+
+    word-wrap: initial;
+
+    text-overflow: ellipsis;
+
+    color: black; // Default Text Colour for Bubble
+}
+
+.timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
+{
+    position: absolute;
+    // z-index: 1;
+    top: 4px;
+    left: $TimeStampLeft;
+
+    width: 200px;
+
+    // display: none;
+}
+
+// .timestamp_f9f2ca:has([aria-label^="Yesterday"])
+// {
+//     right: calc($TimeStampLeft - 21px);
+// }
+
+// .timestamp_f9f2ca:not(:has([aria-label^="Today"]), :has([aria-label^="Yesterday"]))
+// {
+//     right: calc($TimeStampLeft - 28px);
+
+//     // display: none;
+// }
+
+.username_f9f2ca + span:has([role=button] .roleIcon_afae9f)
+{
+    position: absolute;
+    top: 26px;
+    left: -24px;
+
+    // opacity: 0.5;
+}
+
+.botTagCozy_f9f2ca
+{
+    left: 180px;
+    top: -14px;
+
+    // opacity: 0.5;
+}
+
+.botTagCozy_f9f2ca:has(.botTagVerified_a9e77f)
+{
+    left: 167px;
 }
