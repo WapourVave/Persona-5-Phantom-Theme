@@ -92,25 +92,32 @@ $TimeStampLeft: 206px;
     // display: none;
 }
 
-// .timestamp_f9f2ca:has([aria-label^="Yesterday"])
-// {
-//     right: calc($TimeStampLeft - 21px);
-// }
-
-// .timestamp_f9f2ca:not(:has([aria-label^="Today"]), :has([aria-label^="Yesterday"]))
-// {
-//     right: calc($TimeStampLeft - 28px);
-
-//     // display: none;
-// }
-
-.username_f9f2ca + span:has([role=button] .roleIcon_afae9f)
+.username_f9f2ca ~ span:has([role=button] .roleIcon_afae9f)
 {
     position: absolute;
     top: 26px;
     left: -24px;
 
+    z-index: -1; // Unsure about this
+
     // opacity: 0.5;
+}
+
+.username_f9f2ca ~ .clickable_d5cb59:not(.repliedMessage_f9f2ca)
+{
+    position: absolute;
+    z-index: 1;
+
+    top: -25px;
+    left: -8px;
+}
+
+.newMemberBadge_ed263a
+{
+    position: absolute;
+
+    left: 185px;
+    top: -16px;
 }
 
 .botTagCozy_f9f2ca
