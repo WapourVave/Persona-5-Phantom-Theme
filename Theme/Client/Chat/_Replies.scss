@@ -1,8 +1,8 @@
 .repliedMessage_f9f2ca
 {
     position: absolute;
-    top: -24px;
-    left: 290px;
+    top: -22px;
+    left: 270px;
 }
 
 // The reply line
@@ -11,7 +11,7 @@
     display: none;
 }
 
-.repliedMessage_f9f2ca .username_f9f2ca
+.hasReply_f9f2ca .timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
 {
-    
+    top: -4px;
 }
