@@ -1,6 +1,14 @@
-@use "Messages";
+// .mentioned_d5deea
+// {
+
+// }
 
 .mentioned_d5deea:before
 {
-    left: Messages.$MsgLeft + 48px;
+    display: none;
+}
+
+.mentioned_d5deea .messageContent_f9f2ca
+{
+    background: none;
 }

@@ -2,7 +2,7 @@
 
 .theme-dark
 {
-    // // Client Colours
+    // Client Colours
     --background-primary: #{Globals.$DarkRed}; // Chat Area and Server Topbar
     --background-secondary: #{Globals.$DarkRed}; // Sidebars, Guild Folders
     --background-secondary-alt: #{Globals.$DarkRed}; // Client Profile Area 
@@ -11,4 +11,7 @@
     --channeltextarea-background: #{Globals.$DarkRed};
 
     --primary-630: #{Globals.$DarkRed}; // @Members Menu
+
+    --background-mentioned: none;
+    --background-mentioned-hover: none;
 }
