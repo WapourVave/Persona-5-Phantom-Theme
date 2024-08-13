@@ -31,11 +31,14 @@
 
 .messageContent_f9f2ca .mention
 {
-    color: var(--text-primary);
+    // color: var(--text-primary);
+    // color: red;
     background-color: var(--phantom-mentioned);
+    // background-color: unset;
 }
 
 .messageContent_f9f2ca .mention:hover
 {
     background-color: var(--phantom-mentioned-hover);
+    // background-color: unset;
 }
