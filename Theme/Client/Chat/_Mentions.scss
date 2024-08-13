@@ -1,3 +1,5 @@
+@use "../../Utilities/Globals";
+
 // .mentioned_d5deea
 // {
 
@@ -11,4 +13,29 @@
 .mentioned_d5deea .messageContent_f9f2ca
 {
     background: none;
+}
+
+.mentioned_d5deea:after
+{
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 10px;
+
+    width: 37px;
+    height: 44px;
+
+    background-image: Globals.$ExclamationMark;
+    background-repeat: no-repeat;
+}
+
+.messageContent_f9f2ca .mention
+{
+    color: var(--text-primary);
+    background-color: var(--phantom-mentioned);
+}
+
+.messageContent_f9f2ca .mention:hover
+{
+    background-color: var(--phantom-mentioned-hover);
 }
