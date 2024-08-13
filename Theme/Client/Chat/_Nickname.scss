@@ -56,7 +56,7 @@ $TimeStampLeft: 206px;
     $BorderLeft $BorderBottom black, $BorderRight $BorderTop black; // Now they hit all the corners
 }
 
-.username_f9f2ca:not(.threadMessageAccessory_f9f2ca .username_f9f2ca)
+.username_f9f2ca:not(.threadMessageAccessory_f9f2ca .username_f9f2ca, .repliedMessage_f9f2ca .username_f9f2ca)
 {
     position: absolute;
     left: 9px; // Offset to center of Bubble
@@ -104,7 +104,7 @@ $TimeStampLeft: 206px;
     // opacity: 0.5;
 }
 
-.username_f9f2ca ~ .clickable_d5cb59:not(.repliedMessage_f9f2ca)
+.username_f9f2ca ~ .clickable_d5cb59:not(.repliedMessage_f9f2ca .clickable_d5cb59)
 {
     position: absolute;
     z-index: 1;

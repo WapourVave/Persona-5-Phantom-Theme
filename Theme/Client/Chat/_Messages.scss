@@ -15,6 +15,12 @@ $BubbleBorderBottom: 6px;
 $MessagePaddingLeft: 72px; // Default, No Speechbubble Triangle
 $MessagePaddingLeft: 80px;
 
+// Hover Colour
+.message_d5deea:hover
+{
+    background-color: unset!important;
+}
+
 // Positioning
 .message_d5deea.groupStart_d5deea
 {
@@ -25,7 +31,8 @@ $MessagePaddingLeft: 80px;
 }
 
 // This must contain all chat contents
-.messageContent_f9f2ca, .container_b558d0
+.messageContent_f9f2ca:not(.repliedMessage_f9f2ca .messageContent_f9f2ca),
+.container_b558d0
 {
     position: relative;
     top: $MsgFromTop;
@@ -33,7 +40,7 @@ $MessagePaddingLeft: 80px;
 }
 
 // Extra Padding for Speechbubble Triangle Space
-.cozy_f9f2ca .messageContent_f9f2ca
+.cozy_f9f2ca .messageContent_f9f2ca:not(.repliedMessage_f9f2ca .messageContent_f9f2ca)
 {
     padding-left: $MessagePaddingLeft; // Default 72
 }
@@ -88,4 +95,9 @@ $MessagePaddingLeft: 80px;
     background-image: Globals.$SpeechbubbleSquiggle;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.message_d5deea:not(.groupStart_d5deea) .timestamp_f9f2ca
+{
+    left: 18px;
 }

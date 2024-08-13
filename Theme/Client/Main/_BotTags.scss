@@ -1,14 +1,14 @@
-.botTagCozy_f9f2ca
+.botTag_f9f2ca
 {
     background-color: var(--phantom-velvet);
 }
 
-.botTagCozy_f9f2ca :not([aria-label="Official Discord Message"] ~ .botText_a9e77f).botText_a9e77f
+.botTag_f9f2ca :not([aria-label="Official Discord Message"] ~ .botText_a9e77f).botText_a9e77f
 {
     font-size: 0;
 }
 
-.rem_a9e77f :not([aria-label="Official Discord Message"] ~ .botText_a9e77f).botText_a9e77f:before
+.botTag_f9f2ca :not([aria-label="Official Discord Message"] ~ .botText_a9e77f).botText_a9e77f:before
 {
     content: "BOT";
     font-size: .8rem;

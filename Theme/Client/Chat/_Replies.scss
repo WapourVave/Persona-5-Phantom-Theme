@@ -1,5 +1,17 @@
 .repliedMessage_f9f2ca
 {
     position: absolute;
-    top: -18px;
+    top: -24px;
+    left: 290px;
+}
+
+// The reply line
+.repliedMessage_f9f2ca:before
+{
+    display: none;
+}
+
+.repliedMessage_f9f2ca .username_f9f2ca
+{
+    
 }
