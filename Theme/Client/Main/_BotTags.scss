@@ -1,9 +1,9 @@
-.rem_a9e77f .botText_a9e77f
+.botTagCozy_f9f2ca :not([aria-label="Official Discord Message"] ~ .botText_a9e77f).botText_a9e77f
 {
     font-size: 0;
 }
 
-.rem_a9e77f .botText_a9e77f:before
+.rem_a9e77f :not([aria-label="Official Discord Message"] ~ .botText_a9e77f).botText_a9e77f:before
 {
     content: "BOT";
     font-size: .8rem;
