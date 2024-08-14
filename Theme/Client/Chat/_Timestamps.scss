@@ -1,0 +1,26 @@
+$TimeStampLeft: 206px;
+
+.timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
+{
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    left: $TimeStampLeft;
+
+    width: 110px;
+
+    // display: none;
+}
+
+
+
+.hasReply_f9f2ca .timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
+{
+    top: -6px;
+}
+
+// .hasReply_f9f2ca .timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
+// {
+//     top: -15px;
+//     left: 218px;
+// }

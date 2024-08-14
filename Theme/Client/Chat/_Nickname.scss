@@ -9,8 +9,6 @@ $BubbleContentCenter: 4px;
 
 $TextTop: 0;
 
-$TimeStampLeft: 206px;
-
 .header_f9f2ca
 {
     // position: absolute;
@@ -75,40 +73,6 @@ $TimeStampLeft: 206px;
 
     color: black; // Default Text Colour for Bubble
 }
-
-.timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
-{
-    position: absolute;
-    z-index: 1;
-    top: 4px;
-    left: $TimeStampLeft;
-
-    width: 108px;
-
-    // display: none;
-}
-
-// .timestamp_f9f2ca:not(:has([aria-label^="Edited"])):before
-// {
-//     content: "";
-//     z-index: -1;
-
-//     position: absolute;
-//     left: -12px;
-
-//     width: 140px;
-//     height: 20px;
-
-//     background-color: white;
-
-//     $BorderLeft: 1px;
-//     $BorderRight: 5px;
-//     $BorderTop: -5px;
-//     $BorderBottom: 6px;
-
-//     box-shadow: $BorderLeft $BorderTop black, $BorderRight $BorderBottom black, // They don't hit all corners
-//     $BorderLeft $BorderBottom black, $BorderRight $BorderTop black; // Now they hit all the corners
-// }
 
 .username_f9f2ca ~ span:has([role=button] .roleIcon_afae9f)
 {

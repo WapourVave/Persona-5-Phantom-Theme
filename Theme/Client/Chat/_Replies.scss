@@ -2,16 +2,12 @@
 {
     position: absolute;
     top: -22px;
-    left: 270px;
+    left: 275px;
 }
 
 // The reply line
 .repliedMessage_f9f2ca:before
 {
-    display: none;
-}
-
-.hasReply_f9f2ca .timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
-{
-    top: -2px;
+    // display: none;
+    border: unset;
 }

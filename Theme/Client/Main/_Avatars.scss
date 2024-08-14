@@ -1,41 +1,78 @@
 @use "../../Utilities/Globals";
 
-$AvatarPath: 0% 0%, 95% 15%, 100% 85%, 15% 100%;
-$AvatarTop: 8px; // 2px Default
+$ChatAvatarTop: 8px; // 2px Default
 
-.avatar_f9f2ca
+// Mask Borders //
+.avatar_f9f2ca,
+.replyAvatar_f9f2ca
 {
-    position: absolute;
-    top: $AvatarTop;
-    
     border-radius: 0%;
-    // clip-path: polygon($AvatarPath);
     mask-image: Globals.$AvatarBorderMask;
     mask-repeat: no-repeat;
+    // mask-size: 999px;
+}
+
+.avatar_f9f2ca // Chat
+{
+    position: absolute;
+
+    top: $ChatAvatarTop;
     mask-size: 40px;
 }
 
-// Avatar Border
-.messageListItem_d5deea:has(.groupStart_d5deea):before
+.replyAvatar_f9f2ca
+{
+    mask-size: 16px;
+}
+
+// Avatar Border //
+.messageListItem_d5deea:has(.groupStart_d5deea):before,
+.repliedMessage_f9f2ca:before
 {
     content: "";
     position: absolute;
-    left: 0px;
-    top: calc($AvatarTop - 2px - 7px);
-
-    $AvatarSize: 60px;
-    // $AvatarSize: 70px;
-    width: $AvatarSize;
-    height: $AvatarSize;
 
     background-image: Globals.$AvatarBorder;
     background-repeat: no-repeat;
 }
 
+.messageListItem_d5deea:has(.groupStart_d5deea):before
+{
+    position: absolute;
+    top: calc($ChatAvatarTop - 2px - 7px);
+    left: 0px;
+
+    $BorderSize: 60px;
+
+    width: $BorderSize;
+    height: $BorderSize;
+}
+
+.repliedMessage_f9f2ca:before
+{
+    position: absolute;
+    top: -4px;
+    left: -6px;
+
+    $BorderSize: 26px;
+
+    width: $BorderSize;
+    height: $BorderSize;
+}
+
+
+
+
+
+
+
+
 // Decorations Fix
 .avatarDecoration_f9f2ca
 {
-    clip-path: polygon($AvatarPath);
+    mask-image: Globals.$AvatarBorderMask;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
 
     $AvatarSize: 40px;
     // $AvatarSize: 50px;
@@ -45,6 +82,4 @@ $AvatarTop: 8px; // 2px Default
     left: 16px;
     // top: 6px;
     top: 12px;
-
-    // transform: skew(-5deg);
 }
