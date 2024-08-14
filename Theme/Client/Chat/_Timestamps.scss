@@ -13,7 +13,6 @@ $TimeStampLeft: 206px;
 }
 
 
-
 .hasReply_f9f2ca .timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
 {
     top: -6px;
@@ -23,4 +22,11 @@ $TimeStampLeft: 206px;
 {
     top: -15px;
     left: calc($TimeStampLeft + 12px);
+}
+
+
+// Message Timestamps
+.message_d5deea:not(.groupStart_d5deea) .timestamp_f9f2ca
+{
+    left: 18px;
 }
