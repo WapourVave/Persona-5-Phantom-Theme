@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-287.317,-98.1162)">
-        <g id="Speechbubble-Triangle" serif:id="Speechbubble Triangle" transform="matrix(0.15625,0,0,0.337761,224.277,58.8571)">
+    <g transform="matrix(1,0,0,1,-79.2403,-19.8827)">
+        <g id="Speechbubble-Triangle" serif:id="Speechbubble Triangle" transform="matrix(0.15625,0,0,0.337761,16.2007,-19.3764)">
             <rect x="403.454" y="116.233" width="256" height="118.427" style="fill:none;"/>
             <clipPath id="_clip1">
                 <rect x="403.454" y="116.233" width="256" height="118.427"/>
             </clipPath>
             <g clip-path="url(#_clip1)">
-                <g id="Border" transform="matrix(2.32533,0,0,1.3075,405,-86.9417)">
-                    <path d="M-0.665,216.899L75.593,155.392L100.939,189.391L114.931,185.767L114.931,234.51L60.54,245.968L47.556,213.724L-0.665,216.899Z" style="fill:white;"/>
+                <g id="Border_Cut" transform="matrix(2.32533,0,0,1.3075,405,-86.9417)">
+                    <path d="M-0.665,216.899L75.593,155.392L100.939,189.391L103.011,188.854L103.011,237.021L60.54,245.968L47.556,213.724L-0.665,216.899Z" style="fill:white;"/>
                 </g>
                 <g id="New" transform="matrix(2.17518,0,0,1.21608,416.135,-68.4368)">
                     <path d="M6.018,211.495L69.953,160.622L99.078,199.544L111.861,197.128L111.861,222.72L67.891,230.87L55.644,205.807L6.018,211.495Z"/>
