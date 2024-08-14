@@ -20,7 +20,7 @@ $TimeStampLeft: 206px;
 
 .hasReply_f9f2ca .hasBadges_f9f2ca ~ .timestamp_f9f2ca:not(:has([aria-label^="Edited"]))
 {
-    top: -15px;
+    top: -16px;
     left: calc($TimeStampLeft + 12px);
 }
 
