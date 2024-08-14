@@ -1,6 +1,7 @@
 @use "../../Utilities/Globals";
 
 $ChatAvatarTop: 8px; // 2px Default
+$ReplyAvatarTop: -0px;
 
 // Mask Borders //
 .avatar_f9f2ca,
@@ -22,6 +23,9 @@ $ChatAvatarTop: 8px; // 2px Default
 
 .replyAvatar_f9f2ca
 {
+    position: relative;
+    top: $ReplyAvatarTop;
+
     mask-size: 16px;
     margin-right: 6px;
 }
@@ -52,8 +56,10 @@ $ChatAvatarTop: 8px; // 2px Default
 .repliedMessage_f9f2ca:before
 {
     position: absolute;
-    top: -4px;
+    top: calc($ReplyAvatarTop - 4px);
     left: -6px;
+
+    // filter: invert(1);
 
     $BorderSize: 26px;
 
