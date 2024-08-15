@@ -1,4 +1,4 @@
-@use "../../Utilities/Globals";
+@use "../../_Globals/Links";
 
 // .mentioned_d5deea
 // {
@@ -25,7 +25,7 @@
     width: 37px;
     height: 44px;
 
-    background-image: Globals.$ExclamationMark;
+    background-image: Links.$ExclamationMark;
     background-repeat: no-repeat;
 }
 

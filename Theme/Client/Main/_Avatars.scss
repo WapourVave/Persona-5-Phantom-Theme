@@ -1,4 +1,4 @@
-@use "../../Utilities/Globals";
+@use "../../_Globals/Links";
 
 $ChatAvatarTop: 8px; // 2px Default
 $ReplyAvatarTop: -0px;
@@ -8,7 +8,7 @@ $ReplyAvatarTop: -0px;
 .replyAvatar_f9f2ca
 {
     border-radius: 0%;
-    mask-image: Globals.$AvatarBorderMask;
+    mask-image: Links.$AvatarBorderMask;
     mask-repeat: no-repeat;
     // mask-size: 999px;
 }
@@ -37,7 +37,7 @@ $ReplyAvatarTop: -0px;
     content: "";
     position: absolute;
 
-    background-image: Globals.$AvatarBorder;
+    background-image: Links.$AvatarBorder;
     background-repeat: no-repeat;
 }
 
@@ -77,7 +77,7 @@ $ReplyAvatarTop: -0px;
 // Decorations Fix
 .avatarDecoration_f9f2ca
 {
-    mask-image: Globals.$AvatarBorderMask;
+    mask-image: Links.$AvatarBorderMask;
     mask-repeat: no-repeat;
     mask-size: 40px;
 

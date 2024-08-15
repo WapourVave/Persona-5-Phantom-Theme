@@ -1,4 +1,11 @@
 :root
 {
     --font-primary: 'p5RegText';
+
+    // Custom Colours
+    --phantom-velvet: rgb(9, 95, 237);
+
+    // Targets Client Colours
+    --phantom-mentioned: rgba(var(--phantom-velvet), 0.5);
+    --phantom-mentioned-hover: rgba($var(--phantom-velvet), 1);
 }
