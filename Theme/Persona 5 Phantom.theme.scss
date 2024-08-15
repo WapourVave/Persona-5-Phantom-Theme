@@ -51,5 +51,8 @@
 @use "Client/Chat/Replies";
 
 @use "Client/Chat/TextArea/InputArea";
+@use "Client/Chat/TextArea/Containers";
+@use "Client/Chat/TextArea/Buttons";
+@use "Client/Chat/TextArea/Typing";
 
 @use "Client/Channels/Sidebar";
