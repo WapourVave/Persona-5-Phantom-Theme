@@ -10,21 +10,25 @@
   src: url(https://wapourvave.github.io/WebFonts/OptimaNovaLTProBlack/OptimaNovaLTProBlack.otf);
 }
 .theme-dark {
-  --background-primary: #4c0000;
-  --background-secondary: #4c0000;
-  --background-secondary-alt: #4c0000;
-  --background-tertiary: #4c0000;
-  --channeltextarea-background: #4c0000;
-  --primary-630: #4c0000;
+  --phantom-dark-red: #4c0000;
+  --phantom-primary: #4c0000;
+  --phantom-secondary: #000000;
+  --background-primary: var(--phantom-primary);
+  --background-secondary: var(--phantom-secondary);
+  --background-secondary-alt: var(--phantom-secondary);
+  --background-tertiary: var(--phantom-primary);
+  --channeltextarea-background: var(--phantom-secondary);
+  --primary-630: var(--phantom-primary);
   --background-mentioned: none;
   --background-mentioned-hover: none;
-  --phantom-velvet: #095fed;
-  --phantom-mentioned: rgba(56, 96, 235, 0.5);
-  --phantom-mentioned-hover: rgba(56, 96, 235, 1);
 }
 
 :root {
   --font-primary: "p5RegText";
+  --phantom-velvet: rgb(9, 95, 237);
+  --phantom-velvet-rgb: 9, 95, 237;
+  --phantom-mentioned: rgba(var(--phantom-velvet-rgb), 0.5);
+  --phantom-mentioned-hover: rgba($var(--phantom-velvet-rgb), 1);
 }
 
 .avatar_f9f2ca,
@@ -295,4 +299,9 @@
 
 .replying_d5deea .messageContent_f9f2ca {
   color: red;
+}
+
+.sidebar_a4d4d9 {
+  width: 236px;
+  margin-right: 4px;
 }
