@@ -3,10 +3,10 @@
     --font-primary: 'p5RegText';
 
     // Custom Colours
-    $PhantomVelvet: rgb(9, 95, 237);
-    --phantom-velvet: 9, 95, 237;
+    --phantom-velvet: rgb(9, 95, 237);
+    --phantom-velvet-rgb: 9, 95, 237;
 
     // Targets Client Colours
-    --phantom-mentioned: rgba(var(--phantom-velvet), 0.5);
-    --phantom-mentioned-hover: rgba($var(--phantom-velvet), 1);
+    --phantom-mentioned: rgba(var(--phantom-velvet-rgb), 0.5);
+    --phantom-mentioned-hover: rgba($var(--phantom-velvet-rgb), 1);
 }
