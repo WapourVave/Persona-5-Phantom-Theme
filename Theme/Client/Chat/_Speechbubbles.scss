@@ -4,7 +4,20 @@ $BubbleBorderRight: 8px;
 $BubbleBorderTop: 5px;
 $BubbleBorderBottom: 6px;
 
-// Speech Bubble
+// // Singular Bubbles
+// .channelTextArea_a7d72e
+// {
+//     content: "";
+    
+//     background-color: black;
+
+//     border: solid white;
+//     border-radius: 0;
+//     // Border Sides
+//     border-width: $BubbleBorderTop $BubbleBorderRight $BubbleBorderBottom $BubbleBorderLeft;
+// }
+
+// Multi Bubble
 .message_d5deea .contents_f9f2ca:before,
 .message_d5deea:before // Normal Bubbles,
 {
