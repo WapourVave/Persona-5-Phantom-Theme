@@ -5,14 +5,15 @@
 
     // Targets Client Colours
     --phantom-primary: #4c0000;
+    --phantom-secondary: #000000;
 
     // Client Colours
     --background-primary: var(--phantom-primary); // Chat Area and Server Topbar
-    --background-secondary: var(--phantom-primary); // Sidebars, Guild Folders
-    --background-secondary-alt: var(--phantom-primary); // Client Profile Area 
+    --background-secondary: var(--phantom-secondary); // Sidebars, Guild Folders
+    --background-secondary-alt: var(--phantom-secondary); // Client Profile Area 
     --background-tertiary: var(--phantom-primary); // Client Titlebar, Guild Sidebar
 
-    --channeltextarea-background: var(--phantom-primary);
+    --channeltextarea-background: var(--phantom-secondary);
 
     --primary-630: var(--phantom-primary); // @Members Menu
 
