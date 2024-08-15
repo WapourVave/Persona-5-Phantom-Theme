@@ -121,15 +121,24 @@
 .container_b558d0 {
   position: relative;
   top: -6px;
-  left: 24px;
-}
-
-.cozy_f9f2ca .messageContent_f9f2ca:not(.repliedMessage_f9f2ca .messageContent_f9f2ca) {
-  padding-left: 80px;
+  left: 32px;
 }
 
 .container_b558d0 {
   padding-left: 8px;
+}
+
+.messageListItem_d5deea:has(.groupStart_d5deea):after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 46px;
+  top: 14px;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/SpeechbubbleSquiggle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .message_d5deea .contents_f9f2ca:before,
@@ -145,25 +154,11 @@
 }
 
 .message_d5deea.groupStart_d5deea .contents_f9f2ca:before {
-  padding-right: -72px;
   border-width: 5px 8px 0px 4px;
 }
 
 .message_d5deea .contents_f9f2ca:before {
   box-shadow: 0px 6px white;
-}
-
-.messageListItem_d5deea:has(.groupStart_d5deea):after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 46px;
-  top: 14px;
-  width: 40px;
-  height: 40px;
-  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/SpeechbubbleSquiggle.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .header_f9f2ca {
@@ -299,6 +294,51 @@
 
 .replying_d5deea .messageContent_f9f2ca {
   color: red;
+}
+
+.editor_a552a6 {
+  color: black;
+  caret-color: unset;
+}
+
+.form_a7d72e {
+  padding-left: 15px;
+}
+
+.form_a7d72e:before {
+  background: unset;
+}
+
+.channelTextArea_a7d72e .themedBackground_d0696b {
+  background-color: unset;
+}
+
+.channelTextArea_a7d72e {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  background-color: white;
+  border: solid black;
+  border-radius: 0;
+  border-width: 5px 4px 6px 8px;
+}
+
+[aria-label="Boost this server"],
+[aria-label="Send a gift"],
+[aria-label="Open GIF picker"],
+[aria-label="Open sticker picker"] {
+  display: none;
+}
+
+.attachButton_f298d4 path {
+  fill: black;
+}
+
+.attachButton_f298d4:hover path {
+  fill: red !important;
+}
+
+.spriteGreyscale_d91a75 {
+  background-color: black;
 }
 
 .sidebar_a4d4d9 {
