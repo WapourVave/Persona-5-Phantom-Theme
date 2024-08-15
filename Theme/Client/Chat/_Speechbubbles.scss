@@ -1,0 +1,37 @@
+$BubbleWidth:  calc(100% - 93px); // Extends to the left
+$BubbleBorderLeft: 4px;
+$BubbleBorderRight: 8px;
+$BubbleBorderTop: 5px;
+$BubbleBorderBottom: 6px;
+
+// Speech Bubble
+.message_d5deea .contents_f9f2ca:before,
+.message_d5deea:before // Normal Bubbles,
+{
+    content: "";
+    position: absolute;
+    right: 0;
+
+    width: $BubbleWidth;
+    height: 100%;
+    
+    background-color: black;
+
+    border: solid white;
+    // Border Sides
+    border-width: 0px $BubbleBorderRight 0px $BubbleBorderLeft;
+}
+
+// First Message
+.message_d5deea.groupStart_d5deea .contents_f9f2ca:before
+{
+    border-width: $BubbleBorderTop $BubbleBorderRight 0px $BubbleBorderLeft;
+}
+
+// Bottom Message
+.message_d5deea .contents_f9f2ca:before
+{  
+    box-shadow: 0px $BubbleBorderBottom white;
+}
+
+// Speechbubble Squiggle is found in "Messages"

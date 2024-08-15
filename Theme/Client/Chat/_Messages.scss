@@ -5,12 +5,6 @@ $MsgGroupSeperation: 76px; // Distance between message groups
 $MsgFromTop: -6px; // Distance from top, Text
 $MsgLeft: 32px;
 
-$BubbleWidth:  calc(100% - 93px); // Space for Speechbubble Triangle
-$BubbleBorderLeft: 4px;
-$BubbleBorderRight: 8px;
-$BubbleBorderTop: 5px;
-$BubbleBorderBottom: 6px;
-
 // Hover Colour
 .message_d5deea:hover
 {
@@ -39,38 +33,6 @@ $BubbleBorderBottom: 6px;
 .container_b558d0 // Images
 {
     padding-left: calc($MsgLeft - 24px) 
-}
-
-// Speech Bubble
-.message_d5deea .contents_f9f2ca:before,
-.message_d5deea:before // Normal Bubbles,
-{
-    content: "";
-    position: absolute;
-    right: 0;
-
-    width: $BubbleWidth;
-    height: 100%;
-    
-    background-color: black;
-
-    border: solid white;
-    // Border Sides
-    border-width: 0px $BubbleBorderRight 0px $BubbleBorderLeft;
-}
-
-// First Message
-.message_d5deea.groupStart_d5deea .contents_f9f2ca:before
-{
-    padding-right: -72px;
-
-    border-width: $BubbleBorderTop $BubbleBorderRight 0px $BubbleBorderLeft;
-}
-
-// Bottom Message
-.message_d5deea .contents_f9f2ca:before
-{  
-    box-shadow: 0px $BubbleBorderBottom white;
 }
 
 // Speech Bubble Triangle
