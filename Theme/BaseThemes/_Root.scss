@@ -3,7 +3,8 @@
     --font-primary: 'p5RegText';
 
     // Custom Colours
-    --phantom-velvet: rgb(9, 95, 237);
+    $PhantomVelvet: rgb(9, 95, 237);
+    --phantom-velvet: 9, 95, 237;
 
     // Targets Client Colours
     --phantom-mentioned: rgba(var(--phantom-velvet), 0.5);
