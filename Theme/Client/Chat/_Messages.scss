@@ -3,15 +3,13 @@
 $MsgGroupSeperation: 76px; // Distance between message groups
 
 $MsgFromTop: -6px; // Distance from top, Text
-$MsgLeft: 24px;
+$MsgLeft: 32px;
 
 $BubbleWidth:  calc(100% - 93px); // Space for Speechbubble Triangle
 $BubbleBorderLeft: 4px;
 $BubbleBorderRight: 8px;
 $BubbleBorderTop: 5px;
 $BubbleBorderBottom: 6px;
-
-$MessagePaddingLeft: 80px;
 
 // Hover Colour
 .message_d5deea:hover
@@ -37,14 +35,10 @@ $MessagePaddingLeft: 80px;
     left: $MsgLeft;
 }
 
-// Extra Padding for Speechbubble Triangle Space
-.cozy_f9f2ca .messageContent_f9f2ca:not(.repliedMessage_f9f2ca .messageContent_f9f2ca)
-{
-    padding-left: $MessagePaddingLeft; // Default 72
-}
+// Extra Padding for Images from Bubble
 .container_b558d0 // Images
 {
-    padding-left: calc($MessagePaddingLeft - 72px) 
+    padding-left: calc($MsgLeft - 24px) 
 }
 
 // Speech Bubble
