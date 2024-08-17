@@ -55,4 +55,9 @@
 @use "Client/Chat/TextArea/Buttons";
 @use "Client/Chat/TextArea/Typing";
 
+@use "Client/Chat/Editing/EditInput";
+@use "Client/Chat/Editing/EditButtons";
+@use "Client/Chat/Editing/EditOperations";
+@use "Client/Chat/Editing/EditBubbles";
+
 @use "Client/Channels/Sidebar";
