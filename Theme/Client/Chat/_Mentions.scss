@@ -28,19 +28,27 @@
     background-image: Links.$ExclamationMark;
     background-repeat: no-repeat;
 }
+.messageContent_f9f2ca .mention,
+.editor_a552a6 .wrapper_bf1b19
+{
+    border-radius: 2px;
+}
 
 .messageContent_f9f2ca .mention
 {
     // color: var(--text-primary);
-    // color: red;
     background-color: var(--phantom-mentioned);
-    // background-color: unset;
-
-border-radius: 0;
 }
 
-.messageContent_f9f2ca .mention:hover
+.mention:hover
 {
     background-color: var(--phantom-mentioned-hover);
     // background-color: unset;
+}
+
+// Mentions in Input Boxes
+.editor_a552a6 .wrapper_bf1b19
+{
+    background-color: var(--phantom-mentioned-input);
+    color: var(--phantom-mention-foreground-input);
 }
