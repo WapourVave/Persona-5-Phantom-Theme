@@ -4,24 +4,40 @@ $BubbleBorderRight: 8px;
 $BubbleBorderTop: 5px;
 $BubbleBorderBottom: 6px;
 
-// // Singular Bubbles
-// .channelTextArea_a7d72e
-// {
-//     content: "";
-    
-//     background-color: black;
+$InvertBubbleBorderTop: $BubbleBorderTop;
+$InvertBorderRight: $BubbleBorderLeft;
+$InvertBubbleBorderBottom: $BubbleBorderBottom;
+$InvertBubbleBorderLeft: $BubbleBorderRight;
 
-//     border: solid white;
-//     border-radius: 0;
-//     // Border Sides
-//     border-width: $BubbleBorderTop $BubbleBorderRight $BubbleBorderBottom $BubbleBorderLeft;
-// }
-
-// Multi Bubble
+// Initial Bubbles
 .message_d5deea .contents_f9f2ca:before,
-.message_d5deea:before // Normal Bubbles,
+.message_d5deea:before // Multi Middle Bubbles
 {
     content: "";
+
+    width: $BubbleWidth;
+    
+    background-color: black;
+
+    border: solid white;
+    // Border Sides
+    border-width: 0px $BubbleBorderRight 0px $BubbleBorderLeft;
+}
+
+// Singular
+
+// Inverted Singular
+.channelTextArea_a7d72e
+{
+    background-color: white;
+    border: solid black;
+    // Border Sides
+    border-width: $BubbleBorderTop $BubbleBorderRight $BubbleBorderBottom $BubbleBorderLeft;
+}
+
+.message_d5deea .contents_f9f2ca:before,
+.message_d5deea:before // Normal Bubbles
+{
     position: absolute;
     right: 0;
 
@@ -44,6 +60,7 @@ $BubbleBorderBottom: 6px;
 // Bottom Message
 .message_d5deea .contents_f9f2ca:before
 {  
+    // border-width: 0 $BubbleBorderRight $BubbleBorderBottom $BubbleBorderLeft;
     box-shadow: 0px $BubbleBorderBottom white;
 }
 
