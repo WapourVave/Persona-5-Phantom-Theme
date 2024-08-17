@@ -8,5 +8,14 @@
 
     // Targets Client Colours
     --phantom-mentioned: rgba(var(--phantom-velvet-rgb), 0.5);
-    --phantom-mentioned-hover: rgba($var(--phantom-velvet-rgb), 1);
+    --phantom-mentioned-hover: rgba(var(--phantom-velvet-rgb), 1);
+    --phantom-mentioned-input: rgba(var(--phantom-velvet-rgb), 0.8);
+
+    --phantom-mention-foreground-input: rgba(255, 255, 255, 0.8);
+    
+    --phantom-text-input-faded: rgba(0, 0, 0, 0.8);
+
+    // Dark Theme but we global dat shit
+    --text-link: var(--phantom-velvet);
+    --channel-text-area-placeholder: var(--phantom-text-input-faded);
 }
