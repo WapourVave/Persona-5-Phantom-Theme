@@ -1,0 +1,37 @@
+@use "../Speechbubbles";
+
+.message_d5deea .contents_f9f2ca:has(.channelTextArea_d5deea):before
+{
+    background-color: white;
+    border: solid black;
+    // Border Sides
+    border-width: 0 Speechbubbles.$BubbleBorderRight 0 Speechbubbles.$BubbleBorderLeft;
+}
+
+.message_d5deea.groupStart_d5deea .contents_f9f2ca:has(.channelTextArea_d5deea):before
+{
+    border-width: Speechbubbles.$BubbleBorderTop Speechbubbles.$BubbleBorderRight
+     Speechbubbles.$BubbleBorderBottom Speechbubbles.$BubbleBorderLeft;
+}
+
+// Bottom Message 
+.message_d5deea .contents_f9f2ca:has(.channelTextArea_d5deea):before
+{  
+    // border-width: 0 Speechbubbles.$BubbleBorderRight Speechbubbles.$BubbleBorderBottom
+    //  Speechbubbles.$BubbleBorderLeft;
+    box-shadow: 0px Speechbubbles.$BubbleBorderBottom black;
+}
+
+// Prevent the text being too close
+.messageListItem_d5deea:has(.message_d5deea.selected_d5deea) 
+    + .messageListItem_d5deea .message_d5deea:not(.groupStart_d5deea) .messageContent_f9f2ca
+{
+    padding-top: 10px;
+}
+
+// SpeechBubble Inverter
+.messageListItem_d5deea:has(.groupStart_d5deea.message_d5deea.selected_d5deea):after, // Speech Squiggle
+.message_d5deea.mentioned_d5deea:has(.channelTextArea_d5deea):after // Exclamation Mark !
+{
+    filter: invert(1);
+}
