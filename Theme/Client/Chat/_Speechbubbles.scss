@@ -32,7 +32,8 @@ $InvertBubbleBorderLeft: $BubbleBorderRight;
     background-color: white;
     border: solid black;
     // Border Sides
-    border-width: $BubbleBorderTop $BubbleBorderRight $BubbleBorderBottom $BubbleBorderLeft;
+    // border-width: $BubbleBorderTop $BubbleBorderRight $BubbleBorderBottom $BubbleBorderLeft;
+    border-width: $BubbleBorderTop $BubbleBorderLeft $BubbleBorderBottom $BubbleBorderRight;
 }
 
 .message_d5deea .contents_f9f2ca:before,
