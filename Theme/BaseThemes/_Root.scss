@@ -2,6 +2,10 @@
 {
     --font-primary: 'p5RegText';
 
+    // --font-primary: 'Noto Sans';
+    // --font-primary: 'Gloock';
+    // font-weight: 400;
+
     // Custom Colours
     --phantom-velvet: rgb(9, 95, 237);
     --phantom-velvet-rgb: 9, 95, 237;
@@ -19,3 +23,8 @@
     --text-link: var(--phantom-velvet);
     --channel-text-area-placeholder: var(--phantom-text-input-faded);
 }
+
+// *
+// {
+//     font-weight: 600!important;
+// }
