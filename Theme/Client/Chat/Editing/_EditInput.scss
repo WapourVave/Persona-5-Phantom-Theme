@@ -1,29 +1,21 @@
-
-// .message_d5deea:has(.channelTextArea_d5deea) .contents_f9f2ca:before,
-// .message_d5deea:has(.channelTextArea_d5deea):before // Normal Bubbles
-// {
-//     background-color: white;
-//     border-color: black;
-// }
-
 .message_d5deea .contents_f9f2ca .channelTextArea_d5deea
 {
-    // position: absolute;
-    // // top: -14px;
-
     margin: unset;
-    
-    // border-radius: 0;
 }
 
 .message_d5deea .contents_f9f2ca .channelTextArea_d5deea .textArea_d0696b
 {
     height: fit-content!important;
+    min-height: 28px; // This needs padding to replace it on Operations for future enters
 }
 
 .message_d5deea .contents_f9f2ca .textAreaWithoutAttachmentButton_d0696b
 {
     padding-left: 32px;
-    // padding-top: unset;
     padding-bottom: unset;
+}
+
+.groupStart_d5deea.message_d5deea .contents_f9f2ca .textAreaWithoutAttachmentButton_d0696b
+{
+    padding-top: unset;
 }

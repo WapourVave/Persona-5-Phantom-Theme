@@ -9,6 +9,8 @@ $BubbleContentCenter: 4px;
 
 $TextTop: 0;
 
+$TextDivHeight: 22px;
+
 .header_f9f2ca
 {
     // position: absolute;
@@ -64,7 +66,7 @@ $TextTop: 0;
 
     display: inline-block;
     width: 180px;
-    height: 24px;
+    height: $TextDivHeight;
 
     word-wrap: initial;
 
