@@ -39,6 +39,9 @@
 
 @use "BaseThemes/DarkTheme";
 @use "BaseThemes/Root";
+@use "BaseThemes/Animations";
+
+@use "Client/Startup/TakeYourTime";
 
 @use "Client/Main/Avatars";
 @use "Client/Main/BotTags";
