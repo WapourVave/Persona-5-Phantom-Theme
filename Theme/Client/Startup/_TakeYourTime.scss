@@ -1,0 +1,24 @@
+@use "../../_Globals/Links";
+
+// Hide Discord Logo Spinning
+.content_e40c16 .spinner_e40c16,
+.content_e40c16:has(.spinner_e40c16) .text_e40c16
+{
+    display: none;
+}
+
+.content_e40c16:has(.spinner_e40c16):after
+{
+    content: "";
+    position: fixed;
+    right: -76px;
+    bottom: 22px;
+
+    width: 246px;
+    height: 177px;
+    background-image: Links.$TakeYourTime;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    animation: opacityFadeIn 0.8s ease-in;
+}
