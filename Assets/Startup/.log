@@ -1,0 +1,2 @@
+C:/Program Files/Krita (x64)/bin/ffprobe.exe  -hide_banner -v warning -of json=compact=1 -show_format -show_streams -i E:/Development/Programming/Web/Discord/Themes/Persona 5 Phantom Theme/Assets/Startup/Persona-5-Take-Your-Time-gif-001-20170730.gif 
+=====================================================

@@ -1,0 +1,16 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -ss 0 -i E:/Development/Programming/Web/Discord/Themes/Persona 5 Phantom Theme/Assets/Startup/Persona-5-Take-Your-Time-gif-001-20170730.gif -t 1.89 -r 34 ./output_%04d.png
+=====================================================
+Input #0, gif, from 'E:/Development/Programming/Web/Discord/Themes/Persona 5 Phantom Theme/Assets/Startup/Persona-5-Take-Your-Time-gif-001-20170730.gif':
+  Duration: 00:00:01.89, start: 0.000000, bitrate: 6285 kb/s
+  Stream #0:0: Video: gif, bgra, 800x450, 33.33 fps, 33.33 tbr, 100 tbn, 100 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (gif (native) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to './output_%04d.png':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown, progressive), 800x450, q=2-31, 200 kb/s, 34 fps, 34 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 png
+frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    frame=   64 fps=0.0 q=-0.0 Lsize=N/A time=00:00:01.88 bitrate=N/A dup=1 drop=0 speed=5.92x    
+video:4154kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
