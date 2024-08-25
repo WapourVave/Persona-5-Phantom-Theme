@@ -1,0 +1,19 @@
+$BorderThickness: 1px;
+
+.before_inlineCode_cdb578,
+.inlineCode_cdb578,
+.after_inlineCode_cdb578
+{
+    background-color: unset;
+    padding: unset;
+}
+
+[data-slate-node="text"]:has(.inlineCode_cdb578)
+.inlineCode_cdb578
+{
+    padding-left: .2em;
+    padding-right: .2em;
+    
+    border: $BorderThickness solid var(--background-tertiary);
+    border-radius: 4px;
+}
