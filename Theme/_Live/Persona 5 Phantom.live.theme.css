@@ -36,6 +36,32 @@
   --channel-text-area-placeholder: var(--phantom-text-input-faded);
 }
 
+@keyframes opacityFadeIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+  }
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
+.content_e40c16 .spinner_e40c16,
+.content_e40c16:has(.spinner_e40c16) .text_e40c16 {
+  display: none;
+}
+
+.content_e40c16:has(.spinner_e40c16):after {
+  content: "";
+  position: fixed;
+  right: -76px;
+  bottom: 22px;
+  width: 246px;
+  height: 177px;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Startup/TakeYourTime.a.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: opacityFadeIn 0.5s linear;
+}
+
 .avatar_f9f2ca,
 .replyAvatar_f9f2ca {
   border-radius: 0%;
@@ -207,7 +233,7 @@
   text-align: center;
   display: inline-block;
   width: 180px;
-  height: 24px;
+  height: 22px;
   word-wrap: initial;
   text-overflow: ellipsis;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
@@ -368,6 +394,11 @@
   background-color: black;
 }
 
+.channelAppLauncher_df39bd {
+  position: absolute;
+  display: none;
+}
+
 .message_d5deea .contents_f9f2ca .channelTextArea_d5deea {
   margin: unset;
 }
@@ -375,6 +406,7 @@
 .message_d5deea .contents_f9f2ca .channelTextArea_d5deea .textArea_d0696b {
   height: -moz-fit-content !important;
   height: fit-content !important;
+  min-height: 28px;
 }
 
 .message_d5deea .contents_f9f2ca .textAreaWithoutAttachmentButton_d0696b {
@@ -382,9 +414,14 @@
   padding-bottom: unset;
 }
 
-.channelTextArea_d5deea:has(.textAreaWithoutAttachmentButton_d0696b) .buttons_d0696b {
+.groupStart_d5deea.message_d5deea .contents_f9f2ca .textAreaWithoutAttachmentButton_d0696b {
+  padding-top: unset;
+}
+
+.message_d5deea .buttons_d0696b {
   position: absolute;
   right: 0;
+  height: 24px;
 }
 
 .operations_baf0d6 {
@@ -410,13 +447,39 @@
   box-shadow: 0px 6px black;
 }
 
-.messageListItem_d5deea:has(.message_d5deea.selected_d5deea) + .messageListItem_d5deea .message_d5deea:not(.groupStart_d5deea) .messageContent_f9f2ca {
+.messageListItem_d5deea:has(.message_d5deea.selected_d5deea .channelTextArea_d5deea) + .messageListItem_d5deea .message_d5deea:not(.groupStart_d5deea) .messageContent_f9f2ca {
   padding-top: 10px;
 }
 
-.messageListItem_d5deea:has(.groupStart_d5deea.message_d5deea.selected_d5deea):after,
+.messageListItem_d5deea:has(.groupStart_d5deea.message_d5deea.selected_d5deea .channelTextArea_d5deea):after,
 .message_d5deea.mentioned_d5deea:has(.channelTextArea_d5deea):after {
   filter: invert(1);
+}
+
+.before_inlineCode_cdb578,
+.inlineCode_cdb578,
+.after_inlineCode_cdb578 {
+  background-color: unset;
+  padding: unset;
+}
+
+[data-slate-node=text]:has(.inlineCode_cdb578) .inlineCode_cdb578 {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border: 1px solid var(--background-tertiary);
+  border-radius: 4px;
+}
+
+.codeLine_cdb578,
+.codeBlockText_cdb578,
+.codeBlockSyntax_cdb578 {
+  color: black;
+}
+
+[data-slate-node=element]:has(.codeBlockText_cdb578),
+.codeLine_cdb578 {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
 }
 
 .sidebar_a4d4d9 {
