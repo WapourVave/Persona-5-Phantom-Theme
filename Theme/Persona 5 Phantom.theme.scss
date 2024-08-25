@@ -54,10 +54,14 @@
 @use "Client/Chat/TextArea/Containers";
 @use "Client/Chat/TextArea/Buttons";
 @use "Client/Chat/TextArea/Typing";
+@use "Client/Chat/TextArea/ActivitiesButton";
 
 @use "Client/Chat/Editing/EditInput";
 @use "Client/Chat/Editing/EditButtons";
 @use "Client/Chat/Editing/EditOperations";
 @use "Client/Chat/Editing/EditBubbles";
+
+@use "Client/Chat/Markdown/InlineCode";
+@use "Client/Chat/Markdown/Codeblocks";
 
 @use "Client/Channels/Sidebar";
