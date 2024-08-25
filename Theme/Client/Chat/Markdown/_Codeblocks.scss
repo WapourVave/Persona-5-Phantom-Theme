@@ -1,0 +1,91 @@
+$BorderThickness: 1px;
+$BorderRadius: 4px;
+$BlockMargin: 6px;
+
+.codeLine_cdb578,
+.codeBlockText_cdb578,
+.codeBlockSyntax_cdb578
+{
+    color: black;
+}
+
+[data-slate-node="element"]:has(.codeBlockText_cdb578),
+.codeLine_cdb578
+{
+    padding-left: .2em;
+    padding-right: .2em;
+}
+
+
+
+// // Top Element
+// [data-slate-node="element"]:has(.codeBlockText_cdb578) // THIS
+// {
+//     border: $BorderThickness solid var(--background-tertiary);
+//     border-radius: $BorderRadius;
+//     margin-bottom: $BlockMargin;
+// }
+
+// // [data-slate-node="element"]:has(.codeBlockText_cdb578),
+// [data-slate-node="element"]:has(.codeLine_cdb578) + [data-slate-node="element"]:has(.codeBlockSyntax_cdb578),
+// [data-slate-node="element"]:has(.inlineCode_cdb578) // Fix for Inline Code Targetting
+//     + [data-slate-node="element"]:has(.codeBlockSyntax_cdb578)
+// {
+//     margin-top: $BlockMargin;
+// }
+
+// [data-slate-node="element"]:has(.codeBlockSyntax_cdb578),
+// .codeLine_cdb578
+// {
+//     border-color: var(--background-tertiary);
+//     border-style: solid;
+// }
+
+// [data-slate-node="element"]:has(.codeBlockSyntax_cdb578) // ALSO THIS
+// {
+//     border-top-width: $BorderThickness;
+//     border-left-width: $BorderThickness;
+//     border-right-width: $BorderThickness;
+//     border-top-left-radius: $BorderRadius;
+//     border-top-right-radius: $BorderRadius;
+// }
+
+
+// // Middle Element
+// .codeLine_cdb578,
+// .codeLine_cdb578 + [data-slate-node="element"]:has(.codeBlockText_cdb578)
+// {
+//     border-left-width: $BorderThickness;
+//     border-right-width: $BorderThickness;
+
+//     border-top-width: 0;
+//     margin-top: unset;
+
+//     border-top-left-radius: unset;
+//     border-top-right-radius: unset;
+// }
+
+
+// // Bottom Element
+// .codeLine_cdb578 + [data-slate-node="element"]:has(.codeBlockSyntax_cdb578),
+// .codeLine_cdb578 + [data-slate-node="element"]:has(.codeBlockText_cdb578)
+// {
+//     // margin-bottom: 32px;
+//     margin-bottom: $BlockMargin;
+//     border-top-width: 0;
+//     border-top-left-radius: 0;
+//     border-top-right-radius: 0;
+// }
+
+// [data-slate-node="element"]:has(.codeBlockSyntax_cdb578) 
+//     + [data-slate-node="element"]:has(.codeBlockSyntax_cdb578),
+// .codeLine_cdb578 + [data-slate-node="element"]:has(.codeBlockSyntax_cdb578)
+// {
+//     border-top-width: 0;
+//     border-top-left-radius: 0;
+//     border-top-right-radius: 0;
+    
+//     border-bottom-width: $BorderThickness;
+//     border-bottom-left-radius: $BorderRadius;
+//     border-bottom-right-radius: $BorderRadius;
+// }
