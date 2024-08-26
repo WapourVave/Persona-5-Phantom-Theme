@@ -1,0 +1,49 @@
+@use "../../_Globals/Links";
+
+$ChatAvatarTop: 8px; // 2px Default
+$ReplyAvatarTop: -0px;
+
+// Mask Borders //
+.avatar_f9f2ca,
+.replyAvatar_f9f2ca,
+.wrapper_c5f96a .icon_f90abb
+{
+    border-radius: 0%;
+    mask-image: Links.$AvatarBorderMask;
+    mask-repeat: no-repeat;
+    // mask-size: 999px;
+}
+
+.avatar_f9f2ca // Chat
+{
+    position: absolute;
+
+    top: $ChatAvatarTop;
+    mask-size: 40px;
+}
+
+.replyAvatar_f9f2ca
+{
+    position: relative;
+    top: $ReplyAvatarTop;
+
+    mask-size: 16px;
+    margin-right: 6px;
+}
+
+// Decorations Fix
+.avatarDecoration_f9f2ca
+{
+    mask-image: Links.$AvatarBorderMask;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+
+    $AvatarSize: 40px;
+    // $AvatarSize: 50px;
+    width: $AvatarSize;
+    height: $AvatarSize;
+
+    left: 16px;
+    // top: 6px;
+    top: 12px;
+}
