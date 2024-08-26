@@ -34,17 +34,20 @@
 // SOFTWARE.
 
 // Imports
-@use "_Globals/Links";
-@use "_Globals/Fonts";
+@use "Client/_Globals/Links";
+@use "Client/_Globals/Fonts";
 
-@use "BaseThemes/DarkTheme";
-@use "BaseThemes/Root";
-@use "BaseThemes/Animations";
+@use "Client/_BaseThemes/DarkTheme";
+@use "Client/_BaseThemes/Root";
+@use "Client/_BaseThemes/Animations";
 
 @use "Client/Startup/TakeYourTime";
 
-@use "Client/Main/Avatars";
-@use "Client/Main/BotTags";
+@use "Client/Desktop/Titlebar";
+
+@use "Client/_Main/Avatars/AvatarBorders";
+@use "Client/_Main/Avatars/AvatarMasks";
+@use "Client/_Main/BotTags";
 
 @use "Client/Chat/Messages";
 @use "Client/Chat/Speechbubbles";
@@ -67,4 +70,8 @@
 @use "Client/Chat/Markdown/InlineCode";
 @use "Client/Chat/Markdown/Codeblocks";
 
-@use "Client/Channels/Sidebar";
+@use "Client/Channels/ChannelsSidebar";
+
+@use "Client/Servers/ServerSidebar";
+@use "Client/Servers/ServerFolders";
+@use "Client/Servers/ServerAvatars";
