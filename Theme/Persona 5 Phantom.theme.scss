@@ -55,6 +55,8 @@
 @use "Client/Chat/Mentions";
 @use "Client/Chat/Timestamps";
 @use "Client/Chat/Replies";
+@use "Client/Chat/ChatAvatars";
+@use "Client/Chat/ReplyAvatars";
 
 @use "Client/Chat/TextArea/InputArea";
 @use "Client/Chat/TextArea/Containers";

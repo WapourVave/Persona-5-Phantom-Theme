@@ -1,0 +1,13 @@
+$ChatAvatarTop: 8px; // 2px Default
+
+.messageListItem_d5deea:has(.groupStart_d5deea):before
+{
+    position: absolute;
+    top: calc($ChatAvatarTop - 2px - 7px);
+    left: 0px;
+
+    $BorderSize: 60px;
+
+    width: $BorderSize;
+    height: $BorderSize;
+}
