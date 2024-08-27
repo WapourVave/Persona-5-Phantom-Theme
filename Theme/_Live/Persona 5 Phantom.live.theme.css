@@ -2,7 +2,7 @@
 /**
  * @name Persona 5 Phantom
  * @author WapourVave
- * @version 0.0.0
+ * @version 0.24.0
  * @description Persona 5 Phantom Theme. 🎭
  */
 @font-face {
@@ -34,6 +34,7 @@
   --phantom-text-input-faded: rgba(0, 0, 0, 0.8);
   --text-link: var(--phantom-velvet);
   --channel-text-area-placeholder: var(--phantom-text-input-faded);
+  --bg-brand: var(--phantom-velvet);
 }
 
 @keyframes opacityFadeIn {
@@ -62,32 +63,16 @@
   animation: opacityFadeIn 0.5s linear;
 }
 
-.avatar_f9f2ca,
-.replyAvatar_f9f2ca {
-  border-radius: 0%;
-  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
-          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-}
-
-.avatar_f9f2ca {
-  position: absolute;
-  top: 8px;
-  -webkit-mask-size: 40px;
-          mask-size: 40px;
-}
-
-.replyAvatar_f9f2ca {
-  position: relative;
-  top: 0px;
-  -webkit-mask-size: 16px;
-          mask-size: 16px;
-  margin-right: 6px;
+.titleBar_a934d8 {
+  background-color: black;
+  margin-top: 0;
+  padding-top: 4px;
 }
 
 .messageListItem_d5deea:has(.groupStart_d5deea):before,
-.repliedMessage_f9f2ca:before {
+.repliedMessage_f9f2ca:before,
+.wrapper_c5f96a:has(.icon_f90abb):before,
+.wrapper_f90abb:has(.acronym_f90abb):before {
   content: "";
   position: absolute;
   background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorder.svg);
@@ -108,6 +93,32 @@
   left: -6px;
   width: 26px;
   height: 26px;
+}
+
+.avatar_f9f2ca,
+.replyAvatar_f9f2ca,
+.wrapper_c5f96a .icon_f90abb,
+.acronym_f90abb {
+  border-radius: 0%;
+  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
+          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMask.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.avatar_f9f2ca {
+  position: absolute;
+  top: 8px;
+  -webkit-mask-size: 40px;
+          mask-size: 40px;
+}
+
+.replyAvatar_f9f2ca {
+  position: relative;
+  top: 0px;
+  -webkit-mask-size: 16px;
+          mask-size: 16px;
+  margin-right: 6px;
 }
 
 .avatarDecoration_f9f2ca {
@@ -485,4 +496,123 @@
 .sidebar_a4d4d9 {
   width: 236px;
   margin-right: 4px;
+  border-radius: 0 !important;
+}
+
+.guilds_a4d4d9 {
+  background-color: black;
+}
+
+.expandedFolderBackground_bc7085,
+.folderIconWrapper_bc7085 {
+  background-color: var(--phantom-primary);
+  border-radius: 0;
+}
+
+[aria-expanded=true] .folderIconWrapper_bc7085 {
+  position: relative;
+  background-color: transparent;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeader.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeader.svg);
+          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeader.svg);
+  border-radius: 0;
+}
+
+.folder_bc7085.hover_bc7085 {
+  background-color: black;
+}
+
+[aria-expanded=true] .folderIconWrapper_bc7085 svg {
+  position: relative;
+  top: 6px;
+}
+
+.folder_bc7085:has(.closedFolderIconWrapper_bc7085) {
+  background-color: black;
+}
+
+.expandedFolderBackground_bc7085 {
+  transition: none;
+}
+
+.wrapper_c5f96a {
+  border-radius: 0;
+}
+
+.wrapper_bc7085 .wrapper_c5f96a mask {
+  display: none;
+}
+
+.expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085) {
+  -webkit-clip-path: inset(0 0 4px 0);
+          clip-path: inset(0 0 4px 0);
+}
+
+.folderEndWrapper_b7c66a {
+  width: 48px;
+  height: 12px;
+  left: 12px;
+  bottom: 0px;
+  box-shadow: 0 -4px 0 var(--phantom-primary);
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderFooter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.folderEndWrapper_b7c66a,
+.expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085) {
+  border-style: solid;
+  border-right-width: 1px;
+  border-color: var(--phantom-primary);
+}
+
+.wrapper_bc7085 {
+  margin-bottom: 18px;
+}
+
+.expandedFolderBackground_bc7085.collapsed_bc7085 {
+  border: none;
+}
+
+.wrapper_bc7085 [aria-expanded=false] .folderIconWrapper_bc7085 {
+  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMaskInverse.svg);
+          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMaskInverse.svg);
+  transform: scale(1.01);
+}
+
+.wrapper_c5f96a .icon_f90abb,
+.acronym_f90abb {
+  position: relative;
+  left: 3px;
+  top: 1px;
+  width: 32px;
+  height: 32px;
+}
+
+.wrapper_c5f96a:has(.icon_f90abb):before,
+.wrapper_f90abb:has(.acronym_f90abb):before {
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  width: 46px;
+  height: 46px;
+}
+
+.expandedFolderBackground_bc7085:not(.collapsed_bc7085):after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -12px;
+  height: 12px;
+  width: 48px;
+}
+
+.wrapper_c5f96a:before {
+  filter: invert(1);
+}
+
+.wrapper_bc7085 .wrapper_c5f96a:before {
+  filter: invert(0);
 }
