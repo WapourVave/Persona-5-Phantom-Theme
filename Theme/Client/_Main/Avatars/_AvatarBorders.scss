@@ -12,3 +12,12 @@
     background-image: Links.$AvatarBorder;
     background-repeat: no-repeat;
 }
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
+.listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before
+{
+    content: "";
+    position: absolute;
+
+    background-image: Links.$AvatarBorderInverse;
+    background-repeat: no-repeat;
+}

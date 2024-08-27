@@ -10,7 +10,11 @@
     width: $Size;
     height: $Size;
 }
-
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a .icon_f90abb,
+.listItem_c96c45:nth-child(2n) .acronym_f90abb
+{
+    left: -1px;
+}
 
 .wrapper_c5f96a:has(.icon_f90abb):before,
 .wrapper_f90abb:has(.acronym_f90abb):before
