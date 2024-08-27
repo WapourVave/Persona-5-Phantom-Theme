@@ -1,3 +1,5 @@
+@use "../_Globals/Links";
+
 .expandedFolderBackground_bc7085,
 // .folder_bc7085,
 .folderIconWrapper_bc7085
@@ -10,11 +12,13 @@
 [aria-expanded="true"] .folderIconWrapper_bc7085
 {
     position: relative;
-    background-color: unset;
+    background-color: transparent;
 
-    background-image: url(https://garbage-memes.should-be.legal/heitwmz.svg);
+    background-image: Links.$FolderHeader;
     background-repeat: no-repeat;
     background-size: contain;
+
+    mask-image: Links.$FolderHeader;
 
     border-radius: 0;
 }
@@ -66,7 +70,7 @@
     box-shadow: 0 -4px 0 var(--phantom-primary);
 
     // transform: scale(0.98);
-    background-image: url(https://garbage-memes.should-be.legal/9gMR6PN.svg);
+    background-image: Links.$FolderFooter;
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -5,9 +5,9 @@
     border: none;
 }
 
-.wrapper_bc7085:has(.collapsed_bc7085) .wrapper_c5f96a
+.wrapper_bc7085 [aria-expanded="false"] .folderIconWrapper_bc7085
 // .icon_a64689
 {
-    mask-image: Links.$AvatarBorderMask;
+    mask-image: Links.$AvatarBorderMaskInverse;
     transform: scale(1.01);
 }

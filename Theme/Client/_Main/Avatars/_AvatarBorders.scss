@@ -6,7 +6,8 @@ $ReplyAvatarTop: -0px;
 // Avatar Border //
 .messageListItem_d5deea:has(.groupStart_d5deea):before,
 .repliedMessage_f9f2ca:before,
-.wrapper_c5f96a:has(.icon_f90abb):before
+.wrapper_c5f96a:has(.icon_f90abb):before,
+.wrapper_f90abb:has(.acronym_f90abb):before
 {
     content: "";
     position: absolute;
