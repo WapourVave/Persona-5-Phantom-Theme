@@ -1,0 +1,85 @@
+.expandedFolderBackground_bc7085,
+// .folder_bc7085,
+.folderIconWrapper_bc7085
+{
+    // background-color: white;
+    background-color: var(--phantom-primary);
+    border-radius: 0;
+}
+
+[aria-expanded="true"] .folderIconWrapper_bc7085
+{
+    position: relative;
+    background-color: unset;
+
+    background-image: url(https://garbage-memes.should-be.legal/heitwmz.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 0;
+}
+.folder_bc7085.hover_bc7085
+{
+    background-color: black;
+}
+[aria-expanded="true"] .folderIconWrapper_bc7085 svg
+{
+    position: relative;
+    top: 6px; 
+}
+
+.folder_bc7085:has(.closedFolderIconWrapper_bc7085) // Custom Coloured Folders
+{
+    background-color: black; // Keep custom colours dark
+
+}
+
+.expandedFolderBackground_bc7085
+{
+    transition: none;
+}
+
+.wrapper_c5f96a
+{
+    border-radius: 0;
+}
+
+.wrapper_bc7085 .wrapper_c5f96a mask
+{
+    display: none;
+}
+
+
+.expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085)
+{
+    clip-path: inset(0 0 4px 0);
+}
+
+.folderEndWrapper_b7c66a
+{
+    width: 48px;
+    height: 12px;
+
+    left: 12px;
+    bottom: 0px;
+
+    box-shadow: 0 -4px 0 var(--phantom-primary);
+
+    // transform: scale(0.98);
+    background-image: url(https://garbage-memes.should-be.legal/9gMR6PN.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.folderEndWrapper_b7c66a,
+.expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085)
+{
+    border-style: solid;
+    border-right-width: 1px;
+    border-color: var(--phantom-primary);
+}
+
+.wrapper_bc7085
+{
+    margin-bottom: 18px;
+}

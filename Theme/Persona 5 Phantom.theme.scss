@@ -73,5 +73,6 @@
 @use "Client/Channels/ChannelsSidebar";
 
 @use "Client/Servers/ServerSidebar";
-@use "Client/Servers/ServerFolders";
+@use "Client/Servers/ServerFoldersExpanded";
+@use "Client/Servers/ServerFoldersCollapsed";
 @use "Client/Servers/ServerAvatars";

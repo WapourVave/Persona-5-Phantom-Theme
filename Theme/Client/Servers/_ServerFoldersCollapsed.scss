@@ -1,0 +1,13 @@
+@use "../_Globals/Links";
+
+.expandedFolderBackground_bc7085.collapsed_bc7085
+{
+    border: none;
+}
+
+.wrapper_bc7085:has(.collapsed_bc7085) .wrapper_c5f96a
+// .icon_a64689
+{
+    mask-image: Links.$AvatarBorderMask;
+    transform: scale(1.01);
+}
