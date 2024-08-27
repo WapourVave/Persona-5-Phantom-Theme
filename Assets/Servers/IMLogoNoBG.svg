@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-57.1153,-58.9901)">
+        <g id="IM-Logo" serif:id="IM Logo" transform="matrix(1.30136,0,0,2.2086,51.6195,82.9551)">
+            <rect x="4.223" y="-10.851" width="36.884" height="21.733" style="fill:none;"/>
+            <g id="AssetBorder">
+            </g>
+            <g id="Background" transform="matrix(1.17505,0,0,1.17505,-4.46525,0.868211)">
+                <g transform="matrix(0.768424,0,0,0.452775,-39.6657,-37.56)">
+                    <path d="M62.726,68.103L93.957,61.907L99.824,69.635L99.824,92.657L99.253,96.185L75.954,100.711L68.784,98.858L62.726,68.103Z" style="fill:rgb(254,0,0);"/>
+                </g>
+                <g transform="matrix(0.768424,0,0,0.452775,-39.6657,-37.56)">
+                    <path d="M65.795,76.912L70.242,70.602L95.787,67.295L95.217,85.997L89.743,87.214L86.678,90.673L89.743,91.737L80.731,94.854L82.901,92.155L80.731,91.357L81.879,88.909L71.269,90.673L65.795,76.912Z" style="fill:white;"/>
+                </g>
+            </g>
+            <g id="Text" transform="matrix(1.17505,0,0,1.17505,-4.46525,0.868211)">
+                <g transform="matrix(0.768424,0,0,0.452775,-39.6657,-37.56)">
+                    <path d="M75.954,73.393L79.266,73.028L79.227,82.99L76.283,82.99L75.954,73.393Z" style="fill:rgb(254,0,0);"/>
+                </g>
+                <g transform="matrix(0.768424,0,0,0.452775,-39.6657,-37.56)">
+                    <path d="M82.92,82.99L81.533,82.99L80.731,73.794L82.719,73.41L84.58,77.443L86.241,73.41L85.967,72.297L88.868,72.297L88.485,82.99L86.679,82.99L86.241,75.123L84.58,80.113L82.92,75.771L82.92,82.99Z" style="fill:rgb(254,0,0);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
