@@ -36,6 +36,7 @@
 // Imports
 @use "Client/_Globals/Links";
 @use "Client/_Globals/Fonts";
+@use "Client/_Globals/PingBadge";
 
 @use "Client/_BaseThemes/DarkTheme";
 @use "Client/_BaseThemes/Root";
@@ -79,3 +80,4 @@
 @use "Client/Servers/ServerFoldersCollapsed";
 @use "Client/Servers/ServerAvatars";
 @use "Client/Servers/ServerDiscordLogo";
+@use "Client/Servers/ServerAvatarsPingBadges"
