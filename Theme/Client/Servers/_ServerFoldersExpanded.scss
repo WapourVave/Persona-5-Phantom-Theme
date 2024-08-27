@@ -13,8 +13,9 @@
 {
     position: relative;
     background-color: transparent;
+    background-color: var(--phantom-primary);
 
-    background-image: Links.$FolderHeader;
+    // background-image: Links.$FolderHeader;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -29,7 +30,7 @@
 [aria-expanded="true"] .folderIconWrapper_bc7085 svg
 {
     position: relative;
-    top: 6px; 
+    top: 6px;
 }
 
 .folder_bc7085:has(.closedFolderIconWrapper_bc7085) // Custom Coloured Folders
@@ -54,18 +55,19 @@
 }
 
 
-.expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085)
-{
-    clip-path: inset(0 0 4px 0);
-}
+// .expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085)
+// {
+//     clip-path: inset(0 0 4px 0);
+// }
 
 .folderEndWrapper_b7c66a
 {
     width: 48px;
     height: 12px;
+    height: 4px;
 
     left: 12px;
-    bottom: 0px;
+    bottom: 4px;
 
     box-shadow: 0 -4px 0 var(--phantom-primary);
 
@@ -75,13 +77,14 @@
     background-size: cover;
 }
 
-.folderEndWrapper_b7c66a,
-.expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085)
-{
-    border-style: solid;
-    border-right-width: 1px;
-    border-color: var(--phantom-primary);
-}
+// For if right side has aliasing
+// .folderEndWrapper_b7c66a,
+// .expandedFolderBackground_bc7085:not(.expandedFolderIconWrapper_bc7085)
+// {
+//     border-style: solid;
+//     border-right-width: 1px;
+//     border-color: var(--phantom-primary);
+// }
 
 .wrapper_bc7085
 {
