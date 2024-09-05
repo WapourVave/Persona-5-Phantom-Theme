@@ -8,8 +8,8 @@
                 <rect x="4.223" y="-10.851" width="36.884" height="21.733"/>
             </clipPath>
             <g clip-path="url(#_clip1)">
-                <g id="Red" transform="matrix(0.768424,0,0,-0.452775,4.22306,-5.41746)">
-                    <path d="M0,0L0,-29.946L48,-36L48,12L0,0Z" style="fill:rgb(76,0,0);"/>
+                <g id="Collapsed" transform="matrix(0.768424,0,0,0.452775,4.22306,-37.56)">
+                    <path d="M0,62.938L48,58.938L48.095,102.99L48.052,102.99L48.052,106.99L0,102.99L0,62.938Z" style="fill:rgb(76,0,0);"/>
                 </g>
             </g>
         </g>
