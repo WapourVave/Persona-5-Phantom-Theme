@@ -78,6 +78,8 @@
 @use "Client/Servers/ServerSidebar";
 @use "Client/Servers/ServerFoldersExpanded";
 @use "Client/Servers/ServerFoldersCollapsed";
+@use "Client/Servers/ServerFolderOutside";
 @use "Client/Servers/ServerAvatars";
 @use "Client/Servers/ServerDiscordLogo";
-@use "Client/Servers/ServerAvatarsPingBadges"
+@use "Client/Servers/ServerAvatarsPingBadges";
+@use "Client/Servers/ServerMoveIndicator";
