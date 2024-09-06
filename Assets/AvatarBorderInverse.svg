@@ -4,16 +4,11 @@
     <g transform="matrix(1,0,0,1,-136.896,0)">
         <g id="AvatarBorderInverse" transform="matrix(0.195312,0,0,0.195312,136.896,0)">
             <rect x="0" y="0" width="256" height="256" style="fill:none;"/>
-            <clipPath id="_clip1">
-                <rect x="0" y="0" width="256" height="256"/>
-            </clipPath>
-            <g clip-path="url(#_clip1)">
-                <g transform="matrix(-1,0,0,1,267.951,0)">
-                    <path d="M2.236,0L248.806,37.558L258.236,220.954L39.119,256L2.236,0Z"/>
-                </g>
-                <g transform="matrix(-1,0,0,1,267.951,0)">
-                    <path d="M34.628,19.692L240.241,50.625L249.508,207.799L64.956,238.508L34.628,19.692Z" style="fill:white;"/>
-                </g>
+            <g transform="matrix(-1,0,0,1,258.236,0)">
+                <path d="M2.236,0L248.806,37.558L258.236,220.954L39.119,256L2.236,0Z"/>
+            </g>
+            <g transform="matrix(-1,0,0,1,258.236,0)">
+                <path d="M34.628,19.692L240.241,50.625L249.508,207.799L64.956,238.508L34.628,19.692Z" style="fill:white;"/>
             </g>
         </g>
     </g>
