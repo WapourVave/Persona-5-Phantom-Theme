@@ -1,0 +1,19 @@
+@use "../_Globals/Links";
+// Servers outside of Folders 
+
+.placeholderMask_f734d8:has(.dragInner_f734d8)
+{
+    mask: Links.$FolderBorderMaskInverse;
+    background-color: var(--phantom-primary);
+    transform: scale(1.01);
+}
+
+// .dragInner_f734d8 // Drag when outside of folders
+// {
+
+// }
+
+[aria-label="Servers"] > .listItem_c96c45
+{
+    margin-bottom: 18px;
+}
