@@ -60,10 +60,25 @@
 //     clip-path: inset(0 0 4px 0);
 // }
 
-.folderEndWrapper_b7c66a
+//
+// Footer
+//
+
+// .folderEndWrapper_b7c66a
+// {
+
+//     width: 48px;
+//     height: 4px;
+
+//     left: 12px;
+//     bottom: 4px;
+// }
+.folderEndWrapper_b7c66a:after
 {
+    content: "";
+
+    position: absolute;
     width: 48px;
-    height: 12px;
     height: 4px;
 
     left: 12px;
@@ -75,6 +90,15 @@
     background-image: Links.$FolderFooter;
     background-repeat: no-repeat;
     background-size: cover;
+}
+// Fiter while holding mouse down
+.folderEndWrapper_b7c66a.wrapperOver_b7c66a
+{
+    height: 12px;
+}
+.folderEndWrapper_b7c66a.wrapperOver_b7c66a:after
+{
+    bottom: 0px;
 }
 
 // For if right side has aliasing
