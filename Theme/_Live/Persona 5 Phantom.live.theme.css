@@ -571,9 +571,10 @@
   display: none;
 }
 
-.folderEndWrapper_b7c66a {
+.folderEndWrapper_b7c66a:after {
+  content: "";
+  position: absolute;
   width: 48px;
-  height: 12px;
   height: 4px;
   left: 12px;
   bottom: 4px;
@@ -581,6 +582,14 @@
   background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderFooter.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.folderEndWrapper_b7c66a.wrapperOver_b7c66a {
+  height: 12px;
+}
+
+.folderEndWrapper_b7c66a.wrapperOver_b7c66a:after {
+  bottom: 0px;
 }
 
 .wrapper_bc7085 {
@@ -592,9 +601,20 @@
 }
 
 .wrapper_bc7085 [aria-expanded=false] .folderIconWrapper_bc7085 {
-  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMaskInverse.svg);
-          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderMaskInverse.svg);
+  -webkit-mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeaderCollapsed.svg);
+          mask-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeaderCollapsed.svg);
   transform: scale(1.01);
+}
+
+.placeholderMask_f734d8:has(.dragInner_f734d8) {
+  -webkit-mask: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeaderCollapsed.svg);
+          mask: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/FolderHeaderCollapsed.svg);
+  background-color: var(--phantom-primary);
+  transform: scale(1.01);
+}
+
+[aria-label=Servers] > .listItem_c96c45 {
+  margin-bottom: 18px;
 }
 
 .wrapper_c5f96a .icon_f90abb,
@@ -637,6 +657,10 @@
   filter: invert(0);
 }
 
+.wrapper_c5f96a [id="091e7126-332d-4f3d-ba59-b2f9260524c4"] {
+  display: none;
+}
+
 .wrapper_c5f96a:has([aria-label="Direct Messages"]) mask,
 [aria-label="Direct Messages"] .childWrapper_f90abb svg {
   display: none;
@@ -661,4 +685,14 @@
   position: relative;
   left: -36px;
   bottom: 34px;
+}
+
+.wrapper_c5f96a [id=c18c0440-a51c-4cee-8fa0-80b2e25bbc19] {
+  display: none;
+}
+
+.target_b7c66a.dragOver_b7c66a:before {
+  width: 40px;
+  align-items: center;
+  left: 16px;
 }
