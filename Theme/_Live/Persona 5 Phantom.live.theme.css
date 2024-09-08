@@ -529,6 +529,10 @@
   background-color: black;
 }
 
+.guilds_a4d4d9 mask {
+  display: none;
+}
+
 .expandedFolderBackground_bc7085,
 .folderIconWrapper_bc7085 {
   background-color: var(--phantom-primary);
@@ -565,10 +569,6 @@
 
 .wrapper_c5f96a {
   border-radius: 0;
-}
-
-.wrapper_bc7085 .wrapper_c5f96a mask {
-  display: none;
 }
 
 .folderEndWrapper_b7c66a:after {
@@ -657,11 +657,6 @@
   filter: invert(0);
 }
 
-.wrapper_c5f96a [id="091e7126-332d-4f3d-ba59-b2f9260524c4"] {
-  display: none;
-}
-
-.wrapper_c5f96a:has([aria-label="Direct Messages"]) mask,
 [aria-label="Direct Messages"] .childWrapper_f90abb svg {
   display: none;
 }
@@ -685,10 +680,6 @@
   position: relative;
   left: -36px;
   bottom: 34px;
-}
-
-.wrapper_c5f96a [id=c18c0440-a51c-4cee-8fa0-80b2e25bbc19] {
-  display: none;
 }
 
 .target_b7c66a.dragOver_b7c66a:before {

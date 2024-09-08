@@ -1,7 +1,7 @@
 @use "../_Globals/Links";
 
-.wrapper_c5f96a:has([aria-label="Direct Messages"]) mask,
-[aria-label="Direct Messages"] .childWrapper_f90abb  svg
+// .wrapper_c5f96a:has([aria-label="Direct Messages"]) mask, // Ping Mask
+[aria-label="Direct Messages"] .childWrapper_f90abb  svg // Discord Logo
 {
     display:  none;
 }
