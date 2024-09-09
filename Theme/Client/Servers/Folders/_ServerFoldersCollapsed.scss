@@ -1,10 +1,6 @@
 @use "../../_Globals/Links";
 
-.expandedFolderBackground_bc7085.collapsed_bc7085
-{
-    border: none;
-}
-
+// Collapsed Folder Mask Styling
 .wrapper_bc7085 [aria-expanded="false"] .folderIconWrapper_bc7085
 {
     mask-image: Links.$FolderBorderMaskInverse;

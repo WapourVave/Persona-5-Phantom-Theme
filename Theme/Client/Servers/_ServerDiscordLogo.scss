@@ -1,33 +1,27 @@
 @use "../_Globals/Links";
 
-// .wrapper_c5f96a:has([aria-label="Direct Messages"]) mask, // Ping Mask
-[aria-label="Direct Messages"] .childWrapper_f90abb  svg // Discord Logo
+// Hide Discord Logo
+[aria-label="Direct Messages"] .childWrapper_f90abb  svg
 {
     display:  none;
 }
 
-// [aria-label="Direct Messages"]
-// {
-//     display: none;
-// }
-
+// New IM Logo
 [aria-label="Direct Messages"] .childWrapper_f90abb 
 {
-    // content: "";
-    // width: 48px;
-    // height: 48px;
-
     background-color: transparent;
 
     background-image: Links.$IMLogo;
     background-size: cover;
 }
+
+// Remove IM Logo Hovered/Selected Colour
 [aria-label="Direct Messages"].selected_f90abb .childWrapper_f90abb 
 {
     background-color: transparent;
 }
 
-
+// IM Logo Ping Placement
 .wrapper_c5f96a:has([aria-label="Direct Messages"]) .lowerBadge_c5f96a .numberBadge_df8943
 {
     left: -40px;
