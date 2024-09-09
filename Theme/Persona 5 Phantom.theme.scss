@@ -34,7 +34,7 @@
 // SOFTWARE.
 
 // Imports
-@use "Client/_Globals/Links";
+@use "Client/_Globals/Images";
 @use "Client/_Globals/Fonts";
 @use "Client/_Globals/PingBadge";
 
@@ -69,6 +69,8 @@
 @use "Client/Chat/Editing/EditButtons";
 @use "Client/Chat/Editing/EditOperations";
 @use "Client/Chat/Editing/EditBubbles";
+
+@use "Client/Chat/Embeds/ChatLinks";
 
 @use "Client/Chat/Markdown/InlineCode";
 @use "Client/Chat/Markdown/Codeblocks";

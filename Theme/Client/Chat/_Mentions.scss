@@ -1,4 +1,4 @@
-@use "../_Globals/Links";
+@use "../_Globals/Images";
 
 // Remove Extra Message Box
 .mentioned_d5deea:before
@@ -23,7 +23,7 @@
     width: 37px;
     height: 44px;
 
-    background-image: Links.$ExclamationMark;
+    background-image: Images.$ExclamationMark;
     background-repeat: no-repeat;
 }
 // Mention Indicators under GroupStart

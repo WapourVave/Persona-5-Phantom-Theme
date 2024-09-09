@@ -1,4 +1,4 @@
-@use "../../_Globals/Links";
+@use "../../_Globals/Images";
 
 $ChatAvatarTop: 8px; // 2px Default
 $ReplyAvatarTop: -0px;
@@ -10,7 +10,7 @@ $ReplyAvatarTop: -0px;
 .acronym_f90abb
 {
     border-radius: 0%;
-    mask-image: Links.$AvatarBorderMask;
+    mask-image: Images.$AvatarBorderMask;
     mask-repeat: no-repeat;
     // mask-size: 999px;
 }
@@ -18,7 +18,7 @@ $ReplyAvatarTop: -0px;
 .listItem_c96c45:nth-child(2n) .acronym_f90abb
 {
     border-radius: 0%;
-    mask-image: Links.$AvatarBorderMaskInverse;
+    mask-image: Images.$AvatarBorderMaskInverse;
     mask-repeat: no-repeat;
     // mask-size: 999px;
 }
@@ -43,7 +43,7 @@ $ReplyAvatarTop: -0px;
 // Decorations Fix
 .avatarDecoration_f9f2ca
 {
-    mask-image: Links.$AvatarBorderMask;
+    mask-image: Images.$AvatarBorderMask;
     mask-repeat: no-repeat;
     mask-size: 40px;
 

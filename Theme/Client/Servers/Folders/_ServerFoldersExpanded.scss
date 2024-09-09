@@ -1,4 +1,4 @@
-@use "../../_Globals/Links";
+@use "../../_Globals/Images";
 
 .expandedFolderBackground_bc7085,
 // .folder_bc7085,
@@ -15,11 +15,11 @@
     background-color: transparent;
     background-color: var(--phantom-primary);
 
-    // background-image: Links.$FolderHeader;
+    // background-image: Images.$FolderHeader;
     background-repeat: no-repeat;
     background-size: contain;
 
-    mask-image: Links.$FolderHeader;
+    mask-image: Images.$FolderHeader;
 
     border-radius: 0;
 }
@@ -87,7 +87,7 @@
     box-shadow: 0 -4px 0 var(--phantom-primary);
 
     // transform: scale(0.98);
-    background-image: Links.$FolderFooter;
+    background-image: Images.$FolderFooter;
     background-repeat: no-repeat;
     background-size: cover;
 }

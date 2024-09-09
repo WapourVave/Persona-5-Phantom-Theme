@@ -1,4 +1,4 @@
-@use "../_Globals/Links";
+@use "../_Globals/Images";
 
 // Hide Discord Logo Spinning
 .content_e40c16 .spinner_e40c16,
@@ -16,7 +16,7 @@
 
     width: 246px;
     height: 177px;
-    background-image: Links.$TakeYourTime;
+    background-image: Images.$TakeYourTime;
     background-repeat: no-repeat;
     background-size: contain;
 

@@ -1,9 +1,9 @@
-@use "../../_Globals/Links";
+@use "../../_Globals/Images";
 
 // Dragging Servers
 .placeholderMask_f734d8:has(.dragInner_f734d8)
 {
-    mask: Links.$FolderBorderMaskInverse;
+    mask: Images.$FolderBorderMaskInverse;
     background-color: var(--phantom-primary);
     transform: scale(1.01);
 }

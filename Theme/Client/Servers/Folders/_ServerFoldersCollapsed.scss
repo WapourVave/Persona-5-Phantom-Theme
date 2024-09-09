@@ -1,8 +1,8 @@
-@use "../../_Globals/Links";
+@use "../../_Globals/Images";
 
 // Collapsed Folder Mask Styling
 .wrapper_bc7085 [aria-expanded="false"] .folderIconWrapper_bc7085
 {
-    mask-image: Links.$FolderBorderMaskInverse;
+    mask-image: Images.$FolderBorderMaskInverse;
     transform: scale(1.01);
 }

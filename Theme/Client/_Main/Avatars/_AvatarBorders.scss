@@ -1,4 +1,4 @@
-@use "../../_Globals/Links";
+@use "../../_Globals/Images";
 
 // Avatar Border //
 .messageListItem_d5deea:has(.groupStart_d5deea):before,
@@ -9,7 +9,7 @@
     content: "";
     position: absolute;
 
-    background-image: Links.$AvatarBorder;
+    background-image: Images.$AvatarBorder;
     background-repeat: no-repeat;
 }
 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
@@ -18,6 +18,6 @@
     content: "";
     position: absolute;
 
-    background-image: Links.$AvatarBorderInverse;
+    background-image: Images.$AvatarBorderInverse;
     background-repeat: no-repeat;
 }
