@@ -10,6 +10,9 @@
     --phantom-velvet: rgb(9, 95, 237);
     --phantom-velvet-rgb: 9, 95, 237;
 
+    --phantom-velvet-light: rgb(9, 115, 237);
+    --phantom-velvet-light-rgb: 9, 115, 237;
+
     // Targets Client Colours
     --phantom-mentioned: rgba(var(--phantom-velvet-rgb), 0.5);
     --phantom-mentioned-hover: rgba(var(--phantom-velvet-rgb), 1);
@@ -19,8 +22,12 @@
     
     --phantom-text-input-faded: rgba(0, 0, 0, 0.8);
 
-    // Dark Theme but we global dat shit
+    // Dark Theme but we global dat shit \\
+
+    // Text Links
     --text-link: var(--phantom-velvet);
+    --phantom-text-link-hover: rgba(var(--phantom-velvet-light-rgb), 1);
+    
     --channel-text-area-placeholder: var(--phantom-text-input-faded);
 
     --bg-brand: var(--phantom-velvet);
