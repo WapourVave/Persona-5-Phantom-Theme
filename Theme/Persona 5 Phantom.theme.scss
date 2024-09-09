@@ -76,10 +76,11 @@
 @use "Client/Channels/ChannelsSidebar";
 
 @use "Client/Servers/ServerSidebar";
-@use "Client/Servers/ServerFoldersExpanded";
-@use "Client/Servers/ServerFoldersCollapsed";
-@use "Client/Servers/ServerFolderOutside";
-@use "Client/Servers/ServerAvatars";
+@use "Client/Servers//Folders/ServerFoldersExpanded";
+@use "Client/Servers/Folders/ServerFoldersCollapsed";
+@use "Client/Servers/Avatars/ServerOutsideFolders";
+@use "Client/Servers/Avatars/ServerAvatars";
+@use "Client/Servers/Avatars/ServerAvatarSelected";
 @use "Client/Servers/ServerDiscordLogo";
-@use "Client/Servers/ServerSidebarPingBadges";
-@use "Client/Servers/ServerMoveIndicator";
+@use "Client/Servers/Accessories/ServerSidebarPingBadges";
+@use "Client/Servers/Avatars/ServerMoveIndicator";
