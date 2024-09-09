@@ -1,20 +1,18 @@
 @use "../_Globals/Links";
 
-// .mentioned_d5deea
-// {
-
-// }
-
+// Remove Extra Message Box
 .mentioned_d5deea:before
 {
     display: none;
 }
 
+// Removes Ping Highlight behind messages
 .mentioned_d5deea .messageContent_f9f2ca
 {
     background: none;
 }
 
+// Mentioned Indicator "!"
 .mentioned_d5deea:after
 {
     content: "";
@@ -28,22 +26,29 @@
     background-image: Links.$ExclamationMark;
     background-repeat: no-repeat;
 }
+// Mention Indicators under GroupStart
+.message_d5deea:not(.groupStart_d5deea).mentioned_d5deea:after
+{
+    top: -28px;
+}
+
+// Mentioned User Borders
 .messageContent_f9f2ca .mention,
 .editor_a552a6 .wrapper_bf1b19
 {
     border-radius: 2px;
 }
 
+// Mentioned User Colour 
 .messageContent_f9f2ca .mention
 {
-    // color: var(--text-primary);
     background-color: var(--phantom-mentioned);
 }
 
+// Mentioned User Hover Colour
 .mention:hover
 {
     background-color: var(--phantom-mentioned-hover);
-    // background-color: unset;
 }
 
 // Mentions in Input Boxes
