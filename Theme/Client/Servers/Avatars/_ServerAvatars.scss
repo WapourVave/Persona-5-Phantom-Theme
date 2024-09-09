@@ -1,5 +1,6 @@
-.wrapper_c5f96a .icon_f90abb,
-.acronym_f90abb
+// Avy Positioning
+.wrapper_c5f96a .icon_f90abb, // Server Avy's
+.acronym_f90abb // No Avy Image
 {
     position: relative;
     left: 3px;
@@ -10,12 +11,14 @@
     width: $Size;
     height: $Size;
 }
+// Every 2nd Avatar
 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a .icon_f90abb,
 .listItem_c96c45:nth-child(2n) .acronym_f90abb
 {
     left: -1px;
 }
 
+// Avatar Borders
 .wrapper_c5f96a:has(.icon_f90abb):before,
 .wrapper_f90abb:has(.acronym_f90abb):before
 {
@@ -29,23 +32,24 @@
 
 }
 
-.expandedFolderBackground_bc7085:not(.collapsed_bc7085):after
-{
-    content: "";
+// .expandedFolderBackground_bc7085:not(.collapsed_bc7085):after
+// {
+//     content: "";
     
-    position: absolute;
-    left: 0px;
-    bottom: -12px;
+//     position: absolute;
+//     left: 0px;
+//     bottom: -12px;
 
-    height: 12px;
-    width: 48px;
-}
+//     height: 12px;
+//     width: 48px;
+// }
 
+// Invert Avy's
 .wrapper_c5f96a:before
 {
     filter: invert(1);
 }
-.wrapper_bc7085 .wrapper_c5f96a:before // Uninvert Folders, no idea why :not() doesn't work here
+.wrapper_bc7085 .wrapper_c5f96a:before // Uninvert Folders inside of Folders
 {
     filter: invert(0);
 }
