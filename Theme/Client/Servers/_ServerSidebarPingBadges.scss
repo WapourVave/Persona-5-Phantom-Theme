@@ -1,0 +1,24 @@
+@use "../_Globals/PingBadge";
+
+// Server Avatars
+.wrapper_c5f96a:has(.icon_f90abb) .lowerBadge_c5f96a .numberBadge_df8943
+{
+    position: relative;
+    // left: -40px;
+    left: -36px;
+    bottom: 36px
+    // bottom: 32px;
+}
+// Every Second Avy
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb) .lowerBadge_c5f96a .numberBadge_df8943
+{
+    bottom: 32px;
+}
+
+// Collapsed Server Folders
+.wrapper_c5f96a:has(.closedFolderIconWrapper_bc7085) .lowerBadge_c5f96a .numberBadge_df8943
+{
+    position: relative;
+    left: -38px;
+    bottom: 38px;
+}
