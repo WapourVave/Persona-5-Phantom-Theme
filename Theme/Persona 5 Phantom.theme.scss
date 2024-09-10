@@ -38,18 +38,40 @@
 @use "Client/_Globals/Fonts";
 @use "Client/_Globals/PingBadge";
 
+// Base Themes
 @use "Client/_BaseThemes/DarkTheme";
 @use "Client/_BaseThemes/Root";
 @use "Client/_BaseThemes/Animations";
 
+//Startup
 @use "Client/Startup/TakeYourTime";
 
+// Desktop
 @use "Client/Desktop/Titlebar";
 
+// Avatars
 @use "Client/_Main/Avatars/AvatarBorders";
 @use "Client/_Main/Avatars/AvatarMasks";
 @use "Client/_Main/BotTags";
 
+// Servers
+@use "Client/Servers/ServerSidebar";
+
+@use "Client/Servers//Folders/ServerFoldersExpanded";
+@use "Client/Servers/Folders/ServerFoldersCollapsed";
+
+@use "Client/Servers/Avatars/ServerOutsideFolders";
+@use "Client/Servers/Avatars/ServerAvatars";
+@use "Client/Servers/Avatars/ServerAvatarSelected";
+@use "Client/Servers/Avatars/ServerMoveIndicator";
+
+@use "Client/Servers/Logo/ServerClientLogo";
+@use "Client/Servers/Accessories/ServerSidebarPingBadges";
+
+// Channels
+@use "Client/Channels/ChannelsSidebar";
+
+// Chat
 @use "Client/Chat/Messages";
 @use "Client/Chat/Speechbubbles";
 @use "Client/Chat/Nickname";
@@ -75,15 +97,3 @@
 @use "Client/Chat/Markdown/InlineCode";
 @use "Client/Chat/Markdown/Codeblocks";
 @use "Client/Chat/Markdown/Bold";
-
-@use "Client/Channels/ChannelsSidebar";
-
-@use "Client/Servers/ServerSidebar";
-@use "Client/Servers//Folders/ServerFoldersExpanded";
-@use "Client/Servers/Folders/ServerFoldersCollapsed";
-@use "Client/Servers/Avatars/ServerOutsideFolders";
-@use "Client/Servers/Avatars/ServerAvatars";
-@use "Client/Servers/Avatars/ServerAvatarSelected";
-@use "Client/Servers/Logo/ServerClientLogo";
-@use "Client/Servers/Accessories/ServerSidebarPingBadges";
-@use "Client/Servers/Avatars/ServerMoveIndicator";
