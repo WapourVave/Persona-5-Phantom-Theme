@@ -1,5 +1,7 @@
+@use "../_Globals/Images";
 $ChatAvatarTop: 8px; // 2px Default
 
+// Avatar Border
 .messageListItem_d5deea:has(.groupStart_d5deea):before
 {
     position: absolute;
@@ -10,4 +12,30 @@ $ChatAvatarTop: 8px; // 2px Default
 
     width: $BorderSize;
     height: $BorderSize;
+}
+
+// Avatar Positioning
+.avatar_f9f2ca // Chat
+{
+    position: absolute;
+
+    top: $ChatAvatarTop;
+    mask-size: 40px;
+}
+
+// Decorations Fix
+.avatarDecoration_f9f2ca
+{
+    mask-image: Images.$AvatarBorderMask;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+
+    $AvatarSize: 40px;
+    // $AvatarSize: 50px;
+    width: $AvatarSize;
+    height: $AvatarSize;
+
+    left: 16px;
+    // top: 6px;
+    top: 12px;
 }

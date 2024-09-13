@@ -22,37 +22,3 @@ $ReplyAvatarTop: -0px;
     mask-repeat: no-repeat;
     // mask-size: 999px;
 }
-
-.avatar_f9f2ca // Chat
-{
-    position: absolute;
-
-    top: $ChatAvatarTop;
-    mask-size: 40px;
-}
-
-.replyAvatar_f9f2ca
-{
-    position: relative;
-    top: $ReplyAvatarTop;
-
-    mask-size: 16px;
-    margin-right: 6px;
-}
-
-// Decorations Fix
-.avatarDecoration_f9f2ca
-{
-    mask-image: Images.$AvatarBorderMask;
-    mask-repeat: no-repeat;
-    mask-size: 40px;
-
-    $AvatarSize: 40px;
-    // $AvatarSize: 50px;
-    width: $AvatarSize;
-    height: $AvatarSize;
-
-    left: 16px;
-    // top: 6px;
-    top: 12px;
-}

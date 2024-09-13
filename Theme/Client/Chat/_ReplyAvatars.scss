@@ -13,3 +13,13 @@ $ReplyAvatarTop: -0px;
     width: $BorderSize;
     height: $BorderSize;
 }
+
+// Positioning
+.replyAvatar_f9f2ca
+{
+    position: relative;
+    top: $ReplyAvatarTop;
+
+    mask-size: 16px;
+    margin-right: 6px;
+}
