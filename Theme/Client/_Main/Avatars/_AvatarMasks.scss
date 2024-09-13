@@ -1,13 +1,13 @@
 @use "../../_Globals/Images";
 
-$ChatAvatarTop: 8px; // 2px Default
 $ReplyAvatarTop: -0px;
 
 // Mask Borders //
 .avatar_f9f2ca,
 .replyAvatar_f9f2ca,
 .wrapper_c5f96a .icon_f90abb,
-.acronym_f90abb
+.acronym_f90abb, // No avy servers
+.closedFolderIconWrapper_bc7085 .guildIcon_bc7085 // Collapsed Folder Servers
 {
     border-radius: 0%;
     mask-image: Images.$AvatarBorderMask;
@@ -15,7 +15,8 @@ $ReplyAvatarTop: -0px;
     // mask-size: 999px;
 }
 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a .icon_f90abb,
-.listItem_c96c45:nth-child(2n) .acronym_f90abb
+.listItem_c96c45:nth-child(2n) .acronym_f90abb,
+.closedFolderIconWrapper_bc7085 .guildIcon_bc7085:nth-child(2n)
 {
     border-radius: 0%;
     mask-image: Images.$AvatarBorderMaskInverse;

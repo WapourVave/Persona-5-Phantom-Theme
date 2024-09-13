@@ -5,6 +5,7 @@
 .repliedMessage_f9f2ca:before,
 .wrapper_c5f96a:has(.icon_f90abb):before,
 .wrapper_f90abb:has(.acronym_f90abb):before
+// .closedFolderIconWrapper_bc7085 .guildIcon_bc7085:before
 {
     content: "";
     position: absolute;
@@ -14,6 +15,7 @@
 }
 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before
+// .closedFolderIconWrapper_bc7085 .guildIcon_bc7085:nth-child(2n):before
 {
     content: "";
     position: absolute;
