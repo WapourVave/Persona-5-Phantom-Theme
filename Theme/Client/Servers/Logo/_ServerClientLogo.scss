@@ -13,10 +13,16 @@
 
     background-image: Images.$IMLogo;
     background-size: cover;
+
+    border-radius: 8px;
+    transition: none;
+    // transition: background-color 0.2s ease;
 }
 
-// Remove IM Logo Hovered/Selected Colour
+// IM Logo Hovered/Selected Colour
 [aria-label="Direct Messages"].selected_f90abb .childWrapper_f90abb 
 {
-    background-color: transparent;
+    // background-color: transparent;
+    background-color: white;
+    // background-color: var(--phantom-dark-red);
 }
