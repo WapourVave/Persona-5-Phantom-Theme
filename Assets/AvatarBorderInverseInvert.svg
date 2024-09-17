@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-136.896,-124.889)">
+        <g id="Avatar-Borders" serif:id="Avatar Borders">
+            <g id="Masks">
+            </g>
+            <g transform="matrix(0.195312,0,0,0.195312,136.896,124.889)">
+                <g id="Avatar-Borders-Inverted" serif:id="Avatar Borders Inverted">
+                    <rect id="AvatarBorderInverseInvert" x="0" y="0" width="256" height="256" style="fill:none;"/>
+                    <g id="AvatarBorderInverseInvert1" serif:id="AvatarBorderInverseInvert">
+                        <g transform="matrix(-1,0,0,1,258.236,0)">
+                            <path d="M2.236,0L248.806,37.558L258.236,220.954L39.119,256L2.236,0Z" style="fill:white;"/>
+                        </g>
+                        <g transform="matrix(-1,0,0,1,258.236,0)">
+                            <path d="M34.628,19.692L240.241,50.625L249.508,207.799L64.956,238.508L34.628,19.692Z"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Normal">
+            </g>
+        </g>
+    </g>
+</svg>
