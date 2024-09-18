@@ -1,0 +1,36 @@
+// @use "../../_Globals/Images";
+
+// Allow Pills to leave overflow
+// .wrapper_c4cd66
+// {
+//     overflow: visible;
+// }
+
+// Effect All Pills
+// .listItem_c96c45 .pill_a5ad63 .item_c4cd66 
+// {
+//     background-color: var(--phantom-striking-red);
+// }
+
+// Hide Hovered Pills + Selected ones
+// .listItem_c96c45:has(:hover) .pill_a5ad63 .item_c4cd66,
+// .listItem_c96c45:has(.selected_a5ad63) .pill_a5ad63 .item_c4cd66 
+// .listItem_c96c45 .pill_a5ad63 .item_c4cd66 
+// {
+//     display: none;
+// }
+
+// .listItem_c96c45:not(:hover) .pill_a5ad63 .item_c4cd66
+// {
+//     background-color: red;
+//     border-radius: 0;
+
+//     background-image: Images.$UnreadMessageIndicator;
+//     background-repeat: no-repeat;
+
+//     width: 32px!important;
+//     height: 32px!important;
+
+//     left: 10px;
+// }
+

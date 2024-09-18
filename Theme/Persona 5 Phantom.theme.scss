@@ -66,7 +66,9 @@
 @use "Client/Servers/Avatars/ServerMoveIndicator";
 
 @use "Client/Servers/Logo/ServerClientLogo";
+
 @use "Client/Servers/Accessories/ServerSidebarPingBadges";
+@use "Client/Servers/Accessories/ServerSidebarPill";
 
 // Channels
 @use "Client/Channels/ChannelsSidebar";
