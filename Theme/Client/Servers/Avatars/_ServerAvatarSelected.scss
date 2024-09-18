@@ -1,0 +1,38 @@
+@use "../../_Globals/Images";
+
+// Inverted Colours
+.wrapper_c5f96a.wrapper_c5f96a:hover:before,
+.wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.wrapper_c5f96a.wrapper_c5f96a:has(.selected_f90abb):before,
+.selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before
+{
+    background-image: Images.$AvatarBorderInvertSelected;
+}
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):hover:before,
+.listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.selected_f90abb .icon_f90abb):before,
+.listItem_c96c45:nth-child(2n) .selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before
+{
+    background-image: Images.$AvatarBorderInverseInvertSelected;
+}
+
+
+// Uninvert Normie Stuff
+.wrapper_bc7085.wrapper_bc7085 .wrapper_c5f96a.wrapper_c5f96a:hover:before,
+.wrapper_bc7085.wrapper_bc7085 .wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.wrapper_bc7085 .wrapper_c5f96a.wrapper_c5f96a:has(.selected_f90abb):before,
+.wrapper_bc7085 .selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before
+{
+    background-image: Images.$AvatarBorderSelected;
+}
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):hover:before,
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.wrapper_bc7085.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.selected_f90abb .icon_f90abb):before,
+.wrapper_bc7085.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before
+{
+    content: "";
+    position: absolute;
+
+    background-image: Images.$AvatarBorderInverseSelected;
+    background-repeat: no-repeat;
+}

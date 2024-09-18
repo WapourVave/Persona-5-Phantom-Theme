@@ -32,30 +32,18 @@
 
 }
 
-// .expandedFolderBackground_bc7085:not(.collapsed_bc7085):after
+// // Acronym Colours
+// .wrapper_f90abb .acronym_f90abb:before
 // {
-//     content: "";
-    
-//     position: absolute;
-//     left: 0px;
-//     bottom: -12px;
-
-//     height: 12px;
-//     width: 48px;
+//     background-color: none!important;
 // }
 
 // Invert Avy's
-.wrapper_c5f96a:before
-{
-    filter: invert(1);
-}
-.wrapper_bc7085 .wrapper_c5f96a:before // Uninvert Folders inside of Folders
-{
-    filter: invert(0);
-}
-
-// Remove Acronym out of folder Mask
-// .wrapper_c5f96a [id="091e7126-332d-4f3d-ba59-b2f9260524c4"]
+// .wrapper_c5f96a:before
 // {
-//     display: none;
+//     filter: invert(1);
+// }
+// .wrapper_bc7085 .wrapper_c5f96a:before // Uninvert Folders inside of Folders
+// {
+//     filter: invert(0);
 // }

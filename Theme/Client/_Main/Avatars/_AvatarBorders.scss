@@ -1,11 +1,12 @@
 @use "../../_Globals/Images";
 
 // Avatar Border //
+
+// Normal Borders
 .messageListItem_d5deea:has(.groupStart_d5deea):before,
 .repliedMessage_f9f2ca:before,
 .wrapper_c5f96a:has(.icon_f90abb):before,
 .wrapper_f90abb:has(.acronym_f90abb):before
-// .closedFolderIconWrapper_bc7085 .guildIcon_bc7085:before
 {
     content: "";
     position: absolute;
@@ -13,13 +14,58 @@
     background-image: Images.$AvatarBorder;
     background-repeat: no-repeat;
 }
+// .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
+// .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before
+// {
+//     content: "";
+//     position: absolute;
+
+//     background-image: Images.$AvatarBorderInverse;
+//     background-repeat: no-repeat;
+// }
+
+
+// Inverted Colours
+.wrapper_c5f96a.wrapper_c5f96a:before,
+.wrapper_f90abb:has(.acronym_f90abb):before
+{
+    background-image: Images.$AvatarBorderInvert;
+}
 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before
-// .closedFolderIconWrapper_bc7085 .guildIcon_bc7085:nth-child(2n):before
 {
     content: "";
     position: absolute;
 
-    background-image: Images.$AvatarBorderInverse;
+    background-image: Images.$AvatarBorderInverseInvert;
     background-repeat: no-repeat;
 }
+
+// Uninvert Normie Stuff
+.wrapper_bc7085 .wrapper_c5f96a:before,
+.wrapper_bc7085 .wrapper_f90abb:has(.acronym_f90abb):before
+{
+    background-image: Images.$AvatarBorder;
+}
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before
+{
+    background-image: Images.$AvatarBorderInverse;
+}
+
+
+// Hovering // Looks kinda bad, experiment more
+// .messageListItem_d5deea:has(.groupStart_d5deea):hover:before,
+// .repliedMessage_f9f2ca:hover:before,
+// .wrapper_c5f96a:has(.icon_f90abb):hover:before,
+// .wrapper_f90abb:has(.acronym_f90abb):hover:before
+// {
+
+//     background-color: white;
+//     border-radius: 5px;
+// }
+// .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):hover:before,
+// .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):hover:before
+// {
+//     background-image: Images.$AvatarBorderInverse;
+// }
