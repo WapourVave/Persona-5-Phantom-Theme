@@ -7,27 +7,40 @@
 // }
 
 // // Default Pills
-// .listItem_c96c45 .pill_a5ad63 .item_c4cd66 
-// {
-//     display: none;
-// }
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66 
+{
+    display: none;
+}
 
-// .listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 8px"]
-// {
-//     display: flex;
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 8"], // Unread Messages
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 9"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 10"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 11"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 12"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 13"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 14"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 15"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 16"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 17"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 18"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 19"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 20"],
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 21"] // Selected Server
+{
+    display: flex;
 
-//     background-color: transparent;
-//     border-radius: 0;
+    // background-color: transparent;
+    // border-radius: 0;
 
-//     background-image: Images.$UnreadMessageIndicator;
-//     background-repeat: no-repeat;
+    // background-image: Images.$UnreadMessageIndicator;
+    // background-repeat: no-repeat;
 
-//     width: 32px!important;
-//     height: 17px!important;
+    // width: 32px!important;
+    // height: 17px!important;
 
-//     left: 10px;
-//     top: -10px;
-// }
+    // left: 10px;
+    // top: -10px;
+}
 
 // // Make sure the Pill can render above avatars
 // .listItem_c96c45 .pill_a5ad63
