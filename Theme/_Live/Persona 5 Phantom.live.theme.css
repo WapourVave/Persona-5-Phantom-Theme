@@ -2,7 +2,7 @@
 /**
  * @name Persona 5 Phantom
  * @author WapourVave
- * @version 0.25.0
+ * @version 0.12.0
  * @description Persona 5 Phantom Theme. 🎭
  */
 @font-face {
@@ -19,7 +19,7 @@
 
 .theme-dark {
   --phantom-dark-red: #4c0000;
-  --phantom-striking-red: #f70003;
+  --phantom-striking-red: #f70000;
   --phantom-primary: #4c0000;
   --phantom-secondary: #000000;
   --background-primary: var(--phantom-primary);
@@ -34,7 +34,7 @@
 
 :root {
   --font-primary: "p5RegText";
-  --phantom-velvet: rgb(9, 95, 237);
+  --phantom-velvet: #095fed;
   --phantom-velvet-rgb: 9, 95, 237;
   --phantom-velvet-light: rgb(9, 115, 237);
   --phantom-velvet-light-rgb: 9, 115, 237;
@@ -91,12 +91,27 @@
   background-repeat: no-repeat;
 }
 
+.wrapper_c5f96a.wrapper_c5f96a:before,
+.wrapper_f90abb:has(.acronym_f90abb):before {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvert.svg);
+}
+
 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before {
   content: "";
   position: absolute;
-  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInverse.svg);
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvertInverse.svg);
   background-repeat: no-repeat;
+}
+
+.wrapper_bc7085 .wrapper_c5f96a:before,
+.wrapper_bc7085 .wrapper_f90abb:has(.acronym_f90abb):before {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorder.svg);
+}
+
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):before,
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):before {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInverse.svg);
 }
 
 .avatar_f9f2ca,
@@ -248,12 +263,35 @@
   height: 46px;
 }
 
-.wrapper_c5f96a:before {
-  filter: invert(1);
+.wrapper_c5f96a.wrapper_c5f96a:hover:before,
+.wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.wrapper_c5f96a.wrapper_c5f96a:has(.selected_f90abb):before,
+.selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvertSelected.svg);
 }
 
-.wrapper_bc7085 .wrapper_c5f96a:before {
-  filter: invert(0);
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):hover:before,
+.listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.selected_f90abb .icon_f90abb):before,
+.listItem_c96c45:nth-child(2n) .selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvertInverseSelected.svg);
+}
+
+.wrapper_bc7085.wrapper_bc7085 .wrapper_c5f96a.wrapper_c5f96a:hover:before,
+.wrapper_bc7085.wrapper_bc7085 .wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.wrapper_bc7085 .wrapper_c5f96a.wrapper_c5f96a:has(.selected_f90abb):before,
+.wrapper_bc7085 .selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before {
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderSelected.svg);
+}
+
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.icon_f90abb):hover:before,
+.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_f90abb:has(.acronym_f90abb):hover:before,
+.wrapper_bc7085.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .wrapper_c5f96a:has(.selected_f90abb .icon_f90abb):before,
+.wrapper_bc7085.wrapper_bc7085 .listItem_c96c45:nth-child(2n) .selected_f90abb.wrapper_f90abb:has(.acronym_f90abb):before {
+  content: "";
+  position: absolute;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInverseSelected.svg);
+  background-repeat: no-repeat;
 }
 
 .target_b7c66a.dragOver_b7c66a:before {
@@ -270,10 +308,8 @@
   background-color: transparent;
   background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/Servers/IMLogoNoBG.svg);
   background-size: cover;
-}
-
-[aria-label="Direct Messages"].selected_f90abb .childWrapper_f90abb {
-  background-color: transparent;
+  border-radius: 8px;
+  transition: none;
 }
 
 .wrapper_c5f96a:has(.icon_f90abb) .lowerBadge_c5f96a .numberBadge_df8943 {
@@ -295,6 +331,10 @@
 .wrapper_c5f96a:has([aria-label="Direct Messages"]) .lowerBadge_c5f96a .numberBadge_df8943 {
   left: -40px;
   bottom: 30px;
+}
+
+.listItem_c96c45:has([aria-label="Direct Messages"]) .pill_f9623d {
+  display: none;
 }
 
 .sidebar_a4d4d9 {
