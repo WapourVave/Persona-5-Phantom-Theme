@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="100%" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1,0,0,1,-81.069,-84.1237)">
-        <g id="BgBox" transform="matrix(1.19283,0,0,1.26703,-16.6184,-19.2989)">
-            <path d="M95.309,84.618L83.428,85.384L81.895,88.788L92.697,91.326L95.309,84.618Z"/>
-        </g>
-        <g id="UnreadMessages" transform="matrix(2.01339,0,0,1.24773,-138.434,66.6059)">
+        <g id="UnreadMessages" transform="matrix(2.01339,0,0,0.662858,-138.434,74.8174)">
             <rect x="109.022" y="14.04" width="7.947" height="12.823" style="fill:none;"/>
-            <g id="Box" transform="matrix(0.548546,0,0,0.940211,64.3928,-62.2309)">
-                <path d="M95.309,84.904L83.261,85.314L81.664,88.788L92.868,90.976L95.309,84.904Z" style="fill:white;"/>
-                <clipPath id="_clip1">
-                    <path d="M95.309,84.904L83.261,85.314L81.664,88.788L92.868,90.976L95.309,84.904Z"/>
-                </clipPath>
-                <g clip-path="url(#_clip1)">
-                    <g id="Elispes" transform="matrix(1.6879,0,0,0.98477,-102.123,71.0779)">
-                        <g transform="matrix(0.496676,0,0,0.801454,71.5758,-53.3816)">
-                            <circle cx="83.393" cy="87.349" r="0.815"/>
-                        </g>
-                        <g transform="matrix(0.496676,0,0,0.801454,73.371,-53.3816)">
-                            <circle cx="83.393" cy="87.349" r="0.815"/>
-                        </g>
-                        <g transform="matrix(0.496676,0,0,0.801454,69.795,-53.3816)">
-                            <circle cx="83.393" cy="87.349" r="0.815"/>
+            <clipPath id="_clip1">
+                <rect x="109.022" y="14.04" width="7.947" height="12.823"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g id="BgBox" transform="matrix(0.592451,0,0,1.91146,60.5026,-147.704)">
+                    <path d="M95.309,84.618L83.428,85.384L81.895,88.788L92.697,91.326L95.309,84.618Z"/>
+                </g>
+                <g id="Box" transform="matrix(0.548546,0,0,1.76981,64.3928,-135.247)">
+                    <path d="M95.309,84.904L83.261,85.314L81.664,88.788L92.868,90.976L95.309,84.904Z" style="fill:white;"/>
+                    <clipPath id="_clip2">
+                        <path d="M95.309,84.904L83.261,85.314L81.664,88.788L92.868,90.976L95.309,84.904Z"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip2)">
+                        <g id="Elispes" transform="matrix(1.6879,0,0,0.98477,-102.123,71.0779)">
+                            <g transform="matrix(0.496676,0,0,0.801454,71.5758,-53.3816)">
+                                <circle cx="83.393" cy="87.349" r="0.815"/>
+                            </g>
+                            <g transform="matrix(0.496676,0,0,0.801454,73.371,-53.3816)">
+                                <circle cx="83.393" cy="87.349" r="0.815"/>
+                            </g>
+                            <g transform="matrix(0.496676,0,0,0.801454,69.795,-53.3816)">
+                                <circle cx="83.393" cy="87.349" r="0.815"/>
+                            </g>
                         </g>
                     </g>
                 </g>
