@@ -1,36 +1,48 @@
 // @use "../../_Globals/Images";
 
-// Allow Pills to leave overflow
+// // Allow Pills to leave overflow
 // .wrapper_c4cd66
 // {
 //     overflow: visible;
 // }
 
-// Effect All Pills
-// .listItem_c96c45 .pill_a5ad63 .item_c4cd66 
-// {
-//     background-color: var(--phantom-striking-red);
-// }
-
-// Hide Hovered Pills + Selected ones
-// .listItem_c96c45:has(:hover) .pill_a5ad63 .item_c4cd66,
-// .listItem_c96c45:has(.selected_a5ad63) .pill_a5ad63 .item_c4cd66 
+// // Default Pills
 // .listItem_c96c45 .pill_a5ad63 .item_c4cd66 
 // {
 //     display: none;
 // }
 
-// .listItem_c96c45:not(:hover) .pill_a5ad63 .item_c4cd66
+// .listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 8px"]
 // {
-//     background-color: red;
+//     display: flex;
+
+//     background-color: transparent;
 //     border-radius: 0;
 
 //     background-image: Images.$UnreadMessageIndicator;
 //     background-repeat: no-repeat;
 
 //     width: 32px!important;
-//     height: 32px!important;
+//     height: 17px!important;
 
 //     left: 10px;
+//     top: -10px;
 // }
 
+// // Make sure the Pill can render above avatars
+// .listItem_c96c45 .pill_a5ad63
+// {
+//     z-index: 1;
+// }
+
+// // Hide when Lower Badge is present
+// .listItem_c96c45:has(.lowerBadge_c5f96a) .pill_a5ad63 .item_c4cd66 
+// {
+//     display: none;
+// }
+
+// Hide IM Logo Pills
+.listItem_c96c45:has([aria-label="Direct Messages"]) .pill_f9623d
+{
+    display: none;
+}
