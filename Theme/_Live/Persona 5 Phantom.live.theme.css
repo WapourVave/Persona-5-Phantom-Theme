@@ -2,9 +2,20 @@
 /**
  * @name Persona 5 Phantom
  * @author WapourVave
- * @version 0.12.1
+ * @version 0.12.4
  * @description Persona 5 Phantom Theme. 🎭
  */
+[id=app-mount]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-image: url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorder.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderSelected.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInverse.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInverseSelected.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvert.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvertSelected.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvertInverse.svg), url(https://raw.githubusercontent.com/WapourVave/Persona-5-Phantom-Theme/main/Assets/AvatarBorderInvertInverseSelected.svg);
+  background-size: cover;
+  visibility: hidden;
+}
+
 @font-face {
   font-family: "p5RegText";
   src: url(https://wapourvave.github.io/WebFonts/OptimaNovaLTProBlack/OptimaNovaLTProBlack.otf);
@@ -43,6 +54,8 @@
   --phantom-mentioned-input: rgba(var(--phantom-velvet-rgb), 0.8);
   --phantom-mention-foreground-input: rgba(255, 255, 255, 0.8);
   --phantom-text-input-faded: rgba(0, 0, 0, 0.8);
+  --phantom-text-bold: #f4ec7f;
+  --phantom-text-bold-invert: #b4af60;
   --text-link: var(--phantom-velvet);
   --phantom-text-link-hover: rgba(var(--phantom-velvet-light-rgb), 1);
   --channel-text-area-placeholder: var(--phantom-text-input-faded);
@@ -337,6 +350,7 @@
   display: none;
 }
 
+.listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 7"],
 .listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 8"],
 .listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 9"],
 .listItem_c96c45 .pill_a5ad63 .item_c4cd66[style*="height: 10"],
@@ -760,5 +774,9 @@
 }
 
 .message_d5deea strong {
-  color: #fff;
+  color: var(--phantom-text-bold);
+}
+
+.bold_cdb578 {
+  color: var(--phantom-text-bold-invert);
 }

@@ -1,7 +1,14 @@
+// Chat
 .message_d5deea strong
 {
     // display: inline-block;
     // font-size: 17px;
 
-    color: #fff;
+    color: var(--phantom-text-bold);
+}
+
+// User Input
+.bold_cdb578
+{
+    color: var(--phantom-text-bold-invert);
 }
