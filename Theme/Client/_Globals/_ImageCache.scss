@@ -1,0 +1,29 @@
+@use "Images";
+
+// Invisibly cache images
+[id="app-mount"]:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    background-image: 
+        // Normal Avatar Borders
+        Images.$AvatarBorder,
+        Images.$AvatarBorderSelected,
+
+        Images.$AvatarBorderInverse,
+        Images.$AvatarBorderInverseSelected,
+
+        // Inverted Avatar Borders
+        Images.$AvatarBorderInvert,
+        Images.$AvatarBorderInvertSelected,
+
+        Images.$AvatarBorderInverseInvert,
+        Images.$AvatarBorderInverseInvertSelected;
+    background-size: cover;
+
+    visibility: hidden;
+}
